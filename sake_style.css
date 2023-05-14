@@ -1,0 +1,94 @@
+/*Pour démarrer on a lié cette feuille de style à nos deux pages*/
+* {
+    font-family: 'Piazzolla', sans-serif;
+}
+
+
+/*Voyons ici nos balises*/
+
+h1 {
+    font-size: 3em;
+    background-image: url("images_sake/istockphoto.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    margin: 20px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 1.2em;
+    
+}
+
+p, ul {
+    color: royalblue;
+    font-size: 1.2em;
+    margin: 20px;
+    size-adjust: l;
+}
+
+a {
+    color: royalblue;
+}
+
+
+
+li {
+    color: royalblue;
+    font-size: 1em;
+}
+
+
+/* Partie dédiée aux classes*/
+
+
+
+.paragraph_experience {
+    background-color: rgb(153, 148, 148);
+    color: aliceblue;
+}
+
+a:hover {
+    color: blue;
+    background-color: lightblue ;
+}
+
+
+/* On s'attaque au conteneurs */
+.conteneur_navigation {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+background-color: darkblue;
+color: blanchedalmond;
+border-radius: 30px;
+margin: 20px;
+height: 60px;
+align-items: center;
+}
+
+.conteneur_link_color {
+    background-color: darkblue;
+    color: blanchedalmond;
+ 
+}
+
+.conteneur_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkblue;
+    color: blanchedalmond;
+    border-radius: 30px;
+    margin: 20px;
+    font-size: 1.2em;
+    height: 60px;
+    align-content: center;
+}
+
+.footer_link_color {
+    background-color: darkblue;
+    color: blanchedalmond;
+}
