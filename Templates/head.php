@@ -4,7 +4,7 @@
 	<link href="https://fonts.bunny.net/css?family=cabin:400,500,500i" rel="stylesheet" />
 	
 	<!--Liaison avec mon fichier CSS sake-style-->
-	<link rel="stylesheet" href="sake_style.css" />
+	<link rel="stylesheet" href="../CSS/sake_style.css" />
 	
 	<!--Je récupère ici une police asiatique de IBM sur Googlefont : -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
