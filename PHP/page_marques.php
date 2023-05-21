@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<?php include '../Templates/partials/head-content.php'; ?>
+	<title>Sake mes marques</title>
+</head>
+
 <?php
 	// J'inclus 
     include "../Templates/header.php";

@@ -1,6 +1,6 @@
 <main>
         <!--A priori pas besoin de header ni de navigation-->
-        <h1>Présentation synthétique des différentes brasseries</h1>
+        <h2>Présentation synthétique des différentes brasseries</h2>
 	
         <section>
             <p>Me permet de faire du japonais en étudiant chacun des sites et de donner les informations essentielles sur chacune des brasseries</p>

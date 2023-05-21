@@ -1,6 +1,6 @@
 <!-- body contient TOUT ce qui sera affiché à l'écran -->
 <body>
-	<h1>Je raconterais ici expériences et anecdotes</h1>
+	<h2>Je raconterais ici expériences et anecdotes</h2>
 	
     <p>De quoi faire vivre irrégulièrement le site</p>
 
