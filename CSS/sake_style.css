@@ -22,7 +22,7 @@ h2 {
     
 }
 
-p, ul {
+p, ul, select {
     color: royalblue;
     font-size: 1.2em;
     margin: 20px;
@@ -34,7 +34,6 @@ a {
 }
 
 
-
 li {
     color: royalblue;
     font-size: 1em;
@@ -42,7 +41,6 @@ li {
 
 
 /* Partie dédiée aux classes*/
-
 
 
 .paragraph_experience {
@@ -98,8 +96,7 @@ align-items: center;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
-    width: 250px;
-    height: 250px;
+
 }
 
 .four{
@@ -136,10 +133,25 @@ align-items: center;
 
 .position_image {
     margin: 20px;
+    width: 250px;
+    height: 250px;
 }
 
 .position_lien {
+    color: royalblue;
+    font-size: 1.2em;
     margin: 20px;
 }
+
+.accueil_photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+    width: 250px;
+    height: 250px;
+  }
+
 /* gestion des id*/
 
