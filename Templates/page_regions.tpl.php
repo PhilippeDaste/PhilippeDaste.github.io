@@ -3,7 +3,7 @@
         <!--A priori pas besoin de de navigation (sauf pour la carte ?)-->
         <h2>Présentation des Départements ou j'ai testé du sake</h2>
 
-        <form action="" method="get"></form>
+        <form action="http://localhost/Apprendre%20HTML%20&%20CSS/PHP/departement_Shimane.php" method="get"></form>
         <p >
                 <label for="department">Sélectionnez un département : </label>
                     <select class="select" name="department" id="department">

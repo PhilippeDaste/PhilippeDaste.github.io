@@ -57,15 +57,10 @@
 
         <p class="two">Fin du premier mois de formation, l'occasion d'avancer mon site web et donc de faire aussi un peu de ménage dans les bouteilles vides...<br>
         Voici plus de 1 an que je décore le buffet de jolies bouteilles de sake. Commendées au Japon elles sont arrivées en France dans des valises.
-        Au fur et à mesure des retours de voyage. Impossible de me souvenir dans quel ordre elles ont été bues. Impossible aussi de les comparer lors d'une dégustation.
-        Elles ont toutefois chacune leur originalité.<br>
-        En commençant de gauche à droite dans l'ordre de l'image : <br>
-        La première bouteille, un junmai daiginjo 純米 大吟醸酒, porte le label GI (Geographical Indication).
-        En effet, le riz utilisé, Yukimekami 雪女神, a été créé à Yamagata il y a plus de 30 ans pour un concours. On ne le trouve que dans ce sake.<br>
-        La seconde bouteille, Dewa non sato 出羽の里, sous son air banal et bien qu'il soit un simple junmai (純米酒) a reçu maint prix dans les concours internationaux.
-
+        Au fur et à mesure des retours de voyage. Impossible de me souvenir dans quel ordre elles ont été bues. Impossible aussi de les comparer lors d'une dégustation.<br>
+        Elles ont toutefois chacune leur originalité.
         </p>
-        
+
         <img  class="three" class="position_image" src="../images_sake/Dewasakura/Mes_Dewasakura.PNG" alt="Mes Dewasakura"  style="width:550px;height:350px;">
 
 
@@ -73,22 +68,32 @@
     </section>
 
     <section class="accueil_photos">
-            <h2>Mes belles bouteilles</h2>
+            <p>
+            En commençant de gauche à droite dans l'ordre de l'image : <br>
+            La première bouteille, un junmai daiginjo 純米 大吟醸酒, porte le label GI (Geographical Indication).
+            En effet, le riz utilisé, Yukimekami 雪女神, a été créé à Yamagata il y a plus de 30 ans pour un concours. On ne le trouve que dans ce sake.<br>
+            La seconde bouteille, Dewa non sato 出羽の里, sous son air banal et bien qu'il soit un simple junmai (純米酒) a reçu maint prix dans les concours internationaux.<br>
+            La troisième.
+
+            </p>
             <div>
-                <img src="../images_sake/Dewasakura/yukimegami48-main.png" alt="Yukimegami" style="width:400px;height:400px;">
-                <img src="../images_sake/Dewasakura/sato-main.png" alt="Dewanosato" style="width:400px;height:400px;" >
-                <img src="../images_sake/Dewasakura/sansan3-main.png" alt="Sansan" style="width:400px;height:400px;">
+                <img src="../images_sake/Dewasakura/yukimegami48-main.png" alt="Yukimegami" style="width: 300px;height: 300px;">
+                <img src="../images_sake/Dewasakura/sato-main.png" alt="Dewanosato" style="width:300px;height:300px;" >
+                <img src="../images_sake/Dewasakura/sansan3-main.png" alt="Sansan" style="width:300px;height:300px;">
             </div>
             <div>
-                <img src="../images_sake/Dewasakura/yukiwakamaru-main.png" alt="Yukiwakamaru" style="width:400px;height:400px;">
-                <img src="../images_sake/Dewasakura/omachi-main.png" alt="Omachi" style="width:400px;height:400px;">
-                <img src="../images_sake/Dewasakura/tsuya-main.png" alt="Tsuyahime" style="width:400px;height:400px;">
+                <img src="../images_sake/Dewasakura/yukiwakamaru-main.png" alt="Yukiwakamaru" style="width:300px;height:300px;">
+                <img src="../images_sake/Dewasakura/omachi-main.png" alt="Omachi" style="width:300px;height:300px;">
+                <img src="../images_sake/Dewasakura/tsuya-main.png" alt="Tsuyahime" style="width:300px;height:300px;">
             </div>
     </section>
 
 
     <section>
+
         <h2 class="paragraph_experience">Une rencontre fortuite : bodaimoto 菩提酛 </h2>
+        <!--  <p><img src="../images_sake/Asamurasaki1.jpg" alt="Asamurasaki" style="float:right;width:400px;height:400px;"> -->
+        <!-- Se place tout à droite de la page web : NE CONVIENT PAS !  -->
 	    <p>C'est à Nara, dans une petite boutique près de la gare, sur le conseil du gérant (grognon) que j'ai bu du sake Mimurosugi 三諸杉 de la maison Imanishi.</p>
         <a class="position_lien" href="https://imanishisyuzou.com/" target="_blank">La maison Imanishi 今西 de Nara</a>  
     </section>

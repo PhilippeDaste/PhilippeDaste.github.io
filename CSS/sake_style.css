@@ -22,7 +22,7 @@ h2 {
     
 }
 
-p, ul, select {
+p, ul {
     color: royalblue;
     font-size: 1.2em;
     margin: 20px;
@@ -31,6 +31,7 @@ p, ul, select {
 
 a {
     color: royalblue;
+    font-size: 1.2em;
 }
 
 
@@ -39,7 +40,11 @@ li {
     font-size: 1em;
 }
 
-
+option, textarea {
+    margin: 10px;
+    color: royalblue;
+    font-size: 1.2em;
+}
 /* Partie dédiée aux classes*/
 
 
@@ -145,12 +150,10 @@ align-items: center;
 
 .accueil_photos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    padding: 80px;
-    width: 250px;
-    height: 250px;
+    align-items: left;
+
   }
 
 /* gestion des id*/

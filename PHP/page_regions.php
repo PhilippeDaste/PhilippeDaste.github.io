@@ -8,7 +8,7 @@
 
 <?php
 
-{header("Location: ".$_POST['department']."");}
+/* {header("Location: ".$_POST['department']."");} */
 
     // J'inclus le header
     include "../Templates/header.php";
