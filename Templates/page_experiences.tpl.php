@@ -58,7 +58,25 @@
         <p class="two">Fin du premier mois de formation, l'occasion d'avancer mon site web et donc de faire aussi un peu de ménage dans les bouteilles vides...<br>
         Voici plus de 1 an que je décore le buffet de jolies bouteilles de sake. Commendées au Japon elles sont arrivées en France dans des valises.
         Au fur et à mesure des retours de voyage. Impossible de me souvenir dans quel ordre elles ont été bues. Impossible aussi de les comparer lors d'une dégustation.<br>
-        Elles ont toutefois chacune leur originalité.
+        Elles ont toutefois chacune leur originalité.<br>
+
+        En commençant de gauche à droite dans l'ordre de l'image : <br>
+        La première bouteille, un junmai daiginjo (純米 大吟醸), porte le label GI (Geographical Indication).
+        En effet, le riz utilisé, Yukimekami 雪女神, a été créé à Yamagata il y a plus de 30 ans pour un concours. On ne le trouve que dans ce sake.<br>
+        La seconde bouteille, Dewa non sato 出羽の里, sous son air banal et bien qu'il soit un simple junmai (純米酒) a reçu maint prix dans les concours internationaux.<br>
+        La troisième, porte elle aussi un label d'indication géographique, celui-ci spécifique à Yamagata. Dewa33 (33 peut se lire sansan) est son nom.
+        Sansan (燦々) signifiant brillant en français.<br>
+        La bouteille suivante, un junmai daiginjo (純米 大吟醸). <br> utilise lui aussi une variété rare de riz : Yukiwakamaru (雪若丸). Ce riz est donné comme le "frère cadet" du Tsuyahime vu ci-après.
+        Lui aussi est regardé comme un des porte-drapeau des riz de Yamagata. Plus jeune, de 9 ans, il est aussi considéré comme plus "masculin" car un peu moins doux et collant.
+        Une appréciations difficile à confirmer pour moi mais étudiée très sérieusement au Japon : <br>
+        <a class="position_lien" href="https://thejapanesefoodlab.com/rice-evaluation/" target="_blank">Evaluation du riz</a>
+        <a class="position_lien" href="https://thejapanesefoodlab.com/rice-chart/" target="_blank">Evaluation détaillée</a><br>
+        La 5 ème bouteille, un junmai ginjo (純米 吟醸), bénéficie de l'emploi du riz Omachi (雄町). Le Omachi est originaire de la préfecture d’Okayama.
+        Découverte en 1889, c’est une variété de riz extrêmement ancienne encore cultivée de nos jours. Elle représente environ 3% de la production et 90% de cette production se fait dans le département de Okayama.
+        Nous sommes loin de Yamagata. Une quarantaire de brasseries utilisent, de base, cette variété.<br>
+        Finalement, dernière bouteille, un junmai ginjo (純米 吟醸) fait à 100% de Tsuyahime : つや姫.
+        Autre porte drapeau du riz de Yamagata, celui-ci ne peut être cultivé que dans des zones autorisées par le Département de la promotion et du planning des variétés ! (ブランド化戦略推進本部長).
+        Aucun engrais chimique n'est toléré. Qui plus est, après la récolte, le taux de protéines est évalué et ne doit pas dépasser 6,4% !!<br>
         </p>
 
         <img  class="three" class="position_image" src="../images_sake/Dewasakura/Mes_Dewasakura.PNG" alt="Mes Dewasakura"  style="width:550px;height:350px;">
@@ -68,14 +86,7 @@
     </section>
 
     <section class="accueil_photos">
-            <p>
-            En commençant de gauche à droite dans l'ordre de l'image : <br>
-            La première bouteille, un junmai daiginjo 純米 大吟醸酒, porte le label GI (Geographical Indication).
-            En effet, le riz utilisé, Yukimekami 雪女神, a été créé à Yamagata il y a plus de 30 ans pour un concours. On ne le trouve que dans ce sake.<br>
-            La seconde bouteille, Dewa non sato 出羽の里, sous son air banal et bien qu'il soit un simple junmai (純米酒) a reçu maint prix dans les concours internationaux.<br>
-            La troisième.
 
-            </p>
             <div>
                 <img src="../images_sake/Dewasakura/yukimegami48-main.png" alt="Yukimegami" style="width: 300px;height: 300px;">
                 <img src="../images_sake/Dewasakura/sato-main.png" alt="Dewanosato" style="width:300px;height:300px;" >
@@ -89,13 +100,31 @@
     </section>
 
 
-    <section>
+    <section class="conteneur_section">
 
-        <h2 class="paragraph_experience">Une rencontre fortuite : bodaimoto 菩提酛 </h2>
+        <h2 class="one">Une rencontre fortuite : Mimurosugi 三諸杉 </h2>
         <!--  <p><img src="../images_sake/Asamurasaki1.jpg" alt="Asamurasaki" style="float:right;width:400px;height:400px;"> -->
         <!-- Se place tout à droite de la page web : NE CONVIENT PAS !  -->
-	    <p>C'est à Nara, dans une petite boutique près de la gare, sur le conseil du gérant (grognon) que j'ai bu du sake Mimurosugi 三諸杉 de la maison Imanishi.</p>
-        <a class="position_lien" href="https://imanishisyuzou.com/" target="_blank">La maison Imanishi 今西 de Nara</a>  
+	    <p class="two">C'est à Nara, dans une petite boutique près de la gare, sur le conseil du gérant (grognon) que j'ai acheté, et bu, du sake Mimurosugi 三諸杉 de la maison Imanishi.
+        Sans le savoir, 4 jours plus tard nous sommes passés à Miwa (三輪) au terme d'une longue promenade et avons mangé des célèbres nouilles de Miwa (chez そうめん処 森正).
+        près du Omiwa jinga (大神神社) et encore plus près de la brasserie Imanishi...
+        Un junmai "spécial" 特別純米 extrêmement agréable à boire avec deux particularités : <br>
+        Un riz assez rare venant exclusivement du département de Nara : Tsuyuhakaze 露葉風. <br>
+        Une levure particulière : Yamanokami 山乃かみ酵母. Cette levure est tirée de la fleur de Lys (Lys rouge ou encore Lys araignée).
+        Au Japon cette fleur pousse communément le long des routes, des rizières et des cours d'eau.
+        Elle est parfois surnommée « fleur des morts » ou « fleur de l’au-delà » en raison de son importante présence à proximité des cimetières.
+        Peu appréciée de ma femme, les Japonais l’utilisent pour fleurir les tombeaux, elle est le symbole de la séparation définitive.
+        Loin de cette croyance, j'apprécie, moi, simplement, sa couleur rouge  en automne et son élégance.<br>
+        Un résultat exceptionnel. Ni trop doux, ni trop sec, pour moi un équilibre parfait. A boire sans soif, pour lui même.<br>
+        </br> Pour les connaisseurs on se référera au film Higanbana (彼岸花) de Ozu.<br>
+        Premier film d'Ozu tourné en couleur, il brosse un émouvant portrait de père de famille tiraillé entre conservatisme et progressisme mais aussi en creux celui de femmes en opposition.
+        Le scénario : Wataru Hirayama se montre fort réticent lorsqu'il apprend que sa fille Setsuko refuse le mariage qu'il a arrangé pour elle.
+        C'est contre sa volonté qu'il assiste au mariage. Le couple part ensuite pour Hiroshima. Poussé par ses amis, Hirayama surmonte ses convictions et va leur rendre visite.
+        Un parallèle avec la fleur qui veut que lorsqu'elle fleurit les feuilles tombent et que lorsque les feuilles poussent les fleurs se fanent. Impossible rencontre.
+       
+        </p>
+        <img  class="three" class="position_image" src="../images_sake/Mimurosugi.png" alt="Mimurosugi"  style="width:250px;height:550px;">
+        <a class ="four" class="position_lien" href="https://imanishisyuzou.com/" target="_blank">La maison Imanishi 今西 (Nara/Sakurai/Miwa)</a>  
     </section>
 
 
