@@ -45,6 +45,28 @@ option, textarea {
     color: royalblue;
     font-size: 1.2em;
 }
+
+/* Tableau */
+td {
+    border: 5px solid black;
+    padding: 15px;
+}
+
+th {
+    background-color: blue;
+    padding: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    margin : 500px;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 /* Partie dédiée aux classes*/
 
 
@@ -62,6 +84,8 @@ a:hover {
 
 
 /* On s'attaque au conteneurs */
+
+
 .conteneur_navigation {
 display: flex;
 flex-direction: row;
