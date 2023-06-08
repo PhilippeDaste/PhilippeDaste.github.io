@@ -48,18 +48,21 @@ option, textarea {
 
 /* Tableau */
 td {
-    border: 5px solid black;
+    border: 1px solid black;
     padding: 15px;
+    width: 200px;
 }
 
 th {
-    background-color: blue;
+    background-color: rgb(46, 110, 44);
     padding: 15px;
+    width: 200px;
 }
 
 table {
+    text-align: center;
     border-collapse: collapse;
-    margin : 500px;
+    margin-inline: 10px;
 }
 
 caption {
@@ -68,7 +71,13 @@ caption {
 }
 
 /* Partie dédiée aux classes*/
-
+.brasseriesTableau {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
 
 .paragraph_experience {
     background-color: rgb(153, 148, 148);
