@@ -71,7 +71,14 @@ caption {
 }
 
 /* Partie dédiée aux classes*/
-.brasseriesTableau {
+.prefectures_map {
+    display: block;
+    margin: auto;
+    width: 10%;
+    height : 30%;
+}
+
+.brasseries_table {
     display: flex;
     flex-direction: column;
     justify-content: center;

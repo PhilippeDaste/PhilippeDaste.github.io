@@ -17,7 +17,7 @@
     include "../Templates/nav.php";
 
     // J'inclus le coeur de ma page_regions.php
-    include "../Templates/page_regions.tpl.php";
+    include "../Templates/page_prefectures.tpl.php";
 
     // J'inclus le footer
     include "../Templates/footer.php";

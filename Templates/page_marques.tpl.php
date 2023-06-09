@@ -14,7 +14,7 @@
 
         <section>
             <!-- je met un tableau avec les informations de base sur les différentes brasserie-->
-            <table class="brasseriesTable">
+            <table class="brasseries_table">
                 <caption>Liste des brasseries testées</caption>
                 <tr>
                     <th>Préfecture 県</th>

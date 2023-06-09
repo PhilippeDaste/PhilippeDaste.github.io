@@ -1,7 +1,16 @@
 
     <main>
         <!--A priori pas besoin de de navigation (sauf pour la carte ?)-->
-        <h2>Présentation des Départements ou j'ai testé du sake</h2>
+       
+<!--width="1024" height="621"-->
+        <img decoding="async"  src="https://zinglanguages.b-cdn.net/wp-content/uploads/2021/12/Map-of-Prefectures-of-Japan.webp" 
+        alt="Map of Prefectures of Japan" class="prefectures_map" title="Prefectures of Japan 1" 
+        data-src="https://zinglanguages.b-cdn.net/wp-content/uploads/2021/12/Map-of-Prefectures-of-Japan.webp" 
+        data-srcset="https://zinglanguages.b-cdn.net/wp-content/uploads/2021/12/Map-of-Prefectures-of-Japan.webp 1024w, https://zinglanguages.b-cdn.net/wp-content/uploads/2021/12/Map-of-Prefectures-of-Japan-300x182.webp 300w, https://zinglanguages.b-cdn.net/wp-content/uploads/2021/12/Map-of-Prefectures-of-Japan-768x466.webp 768w, https://zinglanguages.b-cdn.net/wp-content/uploads/2021/12/Map-of-Prefectures-of-Japan-150x91.webp 150w" 
+        data-sizes="(max-width: 1024px) 100vw, 1024px" data-ll-status="loaded" sizes="(max-width: 1024px) 100vw, 1024px" 
+        srcset="https://zinglanguages.b-cdn.net/wp-content/uploads/2021/12/Map-of-Prefectures-of-Japan.webp 1024w, https://zinglanguages.b-cdn.net/wp-content/uploads/2021/12/Map-of-Prefectures-of-Japan-300x182.webp 300w, https://zinglanguages.b-cdn.net/wp-content/uploads/2021/12/Map-of-Prefectures-of-Japan-768x466.webp 768w, https://zinglanguages.b-cdn.net/wp-content/uploads/2021/12/Map-of-Prefectures-of-Japan-150x91.webp 150w">
+
+        <h2>Présentation des préfectures ou j'ai testé du sake</h2>
 
         <form action="http://localhost/Apprendre%20HTML%20&%20CSS/PHP/departement_Shimane.php" method="get"></form>
         <p >

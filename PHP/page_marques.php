@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<?php include '../Templates/partials/head-content.php'; ?>
-	<title>Sake mes marques</title>
+	<title>Mes marques de sake</title>
 </head>
 
 <?php

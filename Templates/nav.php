@@ -9,8 +9,8 @@
 		<a href="page_marques.php" class="conteneur_link_color">
 			Mes marques.
 		</a>
-		<a href="page_regions.php" class="conteneur_link_color">
-			Par régions.
+		<a href="page_prefectures.php" class="conteneur_link_color">
+			Mes préfectures.
 		</a>
 
 	</nav>
