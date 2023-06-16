@@ -2,14 +2,21 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
 	<!-- meta est une balise orpheline, elle permet d'insérer un élément à un endroit précis-->
-	<link href="https://fonts.bunny.net/css?family=cabin:400,500,500i" rel="stylesheet" />
+	<meta charset="utf-8">
+	<meta lang="fr">
 	
-	<link rel="stylesheet" href="../css/sake_style.css" />
-	
-    <title>Sake mes expériences</title>
+	<!--Liaison avec mon fichier CSS sake-style-->
+	<link rel="stylesheet" href="../CSS/sake_style.css" />
 
+    <!--Font utilisée dans le site-->
+	<link href="https://fonts.bunny.net/css?family=cabin:400,500,500i" rel="stylesheet" />
+	<!--Ici je récupère la police Dosis de Google font. Mais j'ai déjà une font bunny. Conflit ??-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=IBM+Plex+Sans+JP:wght@300&family=Piazzolla:wght@300&display=swap" rel="stylesheet">
+	
+	<title>Les sake du Japon</title>
 	
 </head>
 
@@ -17,19 +24,41 @@
 <!-- body contient TOUT ce qui sera affiché à l'écran -->
 <body>
 
-		<h1>Je raconterais ici expériences et anecdotes</h1>
+	<!--Mon en tête-->
+	<header>
+		<h1>Les sake du Japon 日本酒</h1> <!-- c'est dans le CSS du h1 que j'ai mis la photo !-->
+		<!-- <img src="images_sake/istockphoto.jpg" alt="riz tasse お猪口 et sake" title="riz, 合, tasse お猪口 et sake"> -->
+	</header>
 
-
-
+	<!--Les liens vers les autres pages du site-->
+	<nav class="conteneur_navigation">
+		<a href="page_brasseries.html" class="conteneur_link_color">
+			Brasseries.
+		</a>
+		<a href="page_experiences.html" class="conteneur_link_color" >
+			Expériences.
+		</a>
+		<a href="page_marques.html" class="conteneur_link_color">
+			Marques.
+		</a>
+		<a href="page_prefectures.html" class="conteneur_link_color">
+			Préfectures.
+		</a>
+	</nav>	
 	
-    <p>De quoi faire vivre irrégulièrement le site</p>
+	<main>
+		<h2>Expériences et anecdotes</h2>
+
+    	<p>Je raconterais ici mes expériences et anecdotes. De quoi faire vivre irrégulièrement le site</p>
 
     <h2 id="mon_ancre">Une rencontre fortuite : bodaimoto 菩提酛</h2>
-<!-- le id="" ne peut être mis que sur une balise, pas un mot ?? -->
+	<!-- le id="" ne peut être mis que sur une balise, pas un mot ?? -->
 	<p class="paragraph_experience">C'est à Nara, dans une petite boutique près de la gare, sur le conseil du gérant (grognon) que j'ai bu du sake Mimurosugi 三諸杉 de la maison Imanishi.
 
 	</p>
     <a href="https://imanishisyuzou.com/" target="_blank">La maison Imanishi de Nara</a>
+	</main>
+	 
 </body>
 
 </html>

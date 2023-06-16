@@ -2,13 +2,21 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
 	<!-- meta est une balise orpheline, elle permet d'insérer un élément à un endroit précis-->
-	<link href="https://fonts.bunny.net/css?family=cabin:400,500,500i" rel="stylesheet" />
+	<meta charset="utf-8">
+	<meta lang="fr">
 	
-	
-    <title>Sake mes marques</title>
+	<!--Liaison avec mon fichier CSS sake-style-->
 	<link rel="stylesheet" href="../CSS/sake_style.css" />
+
+    <!--Font utilisée dans le site-->
+	<link href="https://fonts.bunny.net/css?family=cabin:400,500,500i" rel="stylesheet" />
+	<!--Ici je récupère la police Dosis de Google font. Mais j'ai déjà une font bunny. Conflit ??-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=IBM+Plex+Sans+JP:wght@300&family=Piazzolla:wght@300&display=swap" rel="stylesheet">
+	
+	<title>Les sake du Japon</title>
 	
 </head>
 
@@ -16,58 +24,64 @@
 <!-- body contient TOUT ce qui sera affiché à l'écran -->
 <body>
 
+    	<!--Mon en tête-->
+	<header>
+		<h1>Les sake du Japon 日本酒</h1> <!-- c'est dans le CSS du h1 que j'ai mis la photo !-->
+		<!-- <img src="images_sake/istockphoto.jpg" alt="riz tasse お猪口 et sake" title="riz, 合, tasse お猪口 et sake"> -->
+	</header>
+
+        	<!--Les liens vers les autres pages du site-->
+	<nav class="conteneur_navigation">
+		<a href="page_brasseries.html" class="conteneur_link_color">
+			Brasseries.
+		</a>
+		<a href="page_experiences.html" class="conteneur_link_color" >
+			Expériences.
+		</a>
+		<a href="page_marques.html" class="conteneur_link_color">
+			Marques.
+		</a>
+		<a href="page_prefectures.html" class="conteneur_link_color">
+			Préfectures.
+		</a>
+
+	</nav>
+
     <main>
-        <!--A priori pas besoin de header ni de navigation-->
-        <h1>Présentation synthétique des différentes marques</h1>
-	
-        <section>
-          <!--La marque, chaque brasserie pouvant en avoir plusieurs, avec son historique-->
-                <p>La marque, chaque brasserie pouvant en avoir plusieurs, avec son historique</p>
-            
-        </section>
+
+        <h2>Présentation synthétique des différentes préfectures</h2>
+        <p>
+            Description du département avec ses villes, sous-préfectures et spécialités locales notamment nourriture, eau et riz.
+            Production agricole, principales villes...
+        </p>
 
         <section>
-            <!-- je met un tableau avec les informations de base sur les différentes brasserie-->
-            <table class="brasseriesTable">
-                <caption>Liste des brasseries testées</caption>
-                <tr>
-                    <th>Préfecture 県</th>
-                    <th>Brasserie 酒造</th>
-                    <th>Adresse 住所</th>
-                    <th>Marque(s) 銘柄</th>
-                </tr>
-               
-                <tr>
-                    <td>Yamaguchi 山口</td>
-                    <td>Asahi 旭</td>
-                    <td>〒742-0422 山口県岩国市周東町獺越2167-4 </td>
-                    <td>Dassai 獺祭</td>
-                </tr>
-
-                <tr>
-                    <td>Yamagata 山形</td>
-                    <td>Dewasakura 出羽桜</td>
-                    <td>〒994-0044 山形県天童市一日町一丁目4番6号 </td>
-                    <td>Dewasakura 出羽桜</td>
-                </tr>
-
-                <tr>
-                    <td> Shimane 島根</td>
-                    <td> Hikami 簸上</td>
-                    <td> 島根県仁多郡奥出雲町横田1222 </td>
-                    <td> Nanakanba 七冠馬</td>
-                </tr>
-
-
-
-            </table>
-
-        </section>
-
+            <!--Description du département avec ses villes, sous-préfectures et spécialités locales notamment nourriture, eau et riz-->
+              <p>Tenté formulaire avec un menu déroulant. Faut-il en plus une carte interactive du département en question avec les brasseries testées?
+                  Ou récupérer cette info très japonaise ?
+                  Afficher le doc correspondant au choix sur cette même page (oui) ?
+                  Ecrire aussi une description du département  (ou un lien vers wikipedia ??).
+                  Plus précisément la cité (市) ou se situe la brasserie, avec une photo perso ??
+                </p>
+  
+          </section>
+  
+          <section>
+              <h3>Département de Hyogo 兵庫</h3>
+              <h3>Département de Shimane 島根</h3>
+                <p>Shimane</p>
+              <h3>Département de Tochigi 栃木</h3>
+              <h3>Département de Yamagata 山形</h3>
+  
+          </section>
+  
+          <section>
+              <!--carte interactive du département avec indiqué les adresses de chaque brasserie-->
+           
+                
+            </section>
 
     </main>
-    <script src="../JS/letableau.js"></script>
-	<script src="../JS/chgttitre.js"></script>
    
 
 </body>
