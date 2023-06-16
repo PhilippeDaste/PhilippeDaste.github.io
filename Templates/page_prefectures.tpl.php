@@ -24,7 +24,9 @@
                     </select>
         </p>
 
-        <input type="submit" value="Go" title="valider pour aller à la page sélectionnée" />
+        <!-- pas besoin de bouton :
+        <input type="submit" value="Go" title="valider pour aller à la page sélectionnée" /> 
+        -->
         
         </form>
 

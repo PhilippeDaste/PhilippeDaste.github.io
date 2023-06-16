@@ -1,0 +1,90 @@
+body {
+    font-family: "arial", sans-serif;
+}
+
+h2 {
+    font-size: 1.2em;   
+}
+
+p {
+    color: royalblue;
+    font-size: 1.2em;
+    margin: 20px;
+    size-adjust: l;
+}
+
+/*Le conteneur #slider est en position relative, ce qui permet à ses enfants de se positionner en absolute par rapport à lui.
+Il ne faut pas oublier cette règle CSS : un positionnement absolute se fait toujours dans le cadre du premier bloc parent positionné.
+Les flèches seront donc plaquées contre les bords grâce au positionnement absolute.*/
+
+#slider {
+    position: relative;
+    /* on se cale pour ne pas dépasser la hauteur permise au conteneur donc 100%, sinon dépasse sur les éléments dessus et dessous */
+    width: 100%;
+    height: 100%;
+    /* width: 1200px; */
+    margin: auto;
+    /* pour positionner les enfants du slider : ici les flèches droite et gauche */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Le centrage vertical des flèches est géré par les propriétés display: flex et align-items: center.*/
+
+/* Le code CSS permet de centrer horizontalement le slider et de faire apparaître progressivement les flèches, lors du survol de la souris.
+La propriété transition qui va effectuer les changements d'opacité sur une durée de 300 millisecondes.
+Par conséquent, le survol du slider, fera apparaître les flèches en passante de l'opacity: 0 à 1 en 0.3 secondes. */
+
+#precedent, #suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    /* pour gérer la taille de mes pointeurs de droite et gauche : ici je prends 40 px*/
+    font-size: 40px;
+    color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+/* positionne le chevron à gauche de l'image*/
+#precedent {
+    left: 0;
+}
+
+/* positionne le chevron à droite de l'image*/
+#suivant {
+    right: 0;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+    opacity: 1;
+}
+
+
+/* slider site Oclock */
+
+  
+  .slider__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  
+  .slider__img--current {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .slider__btn {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+  }
