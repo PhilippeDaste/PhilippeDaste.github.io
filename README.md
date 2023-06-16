@@ -12,21 +12,33 @@ Plus proche de la formation actuelle, le MOOC [Concevez votre site web avec PHP 
 
 Restait à trouver un sujet motivant pour mettre en oeuvre les technologies et occuper activement la retraite à venir, autrement que par d'intéressantes analyses de données. Pourquoi pas le **sake** car avec 1500 brasseries encore en activité il y a matière à faire de nombreuses excursions "culturelles" dans des endroits plus ou moins "originaux" hors des lieux touristiques habituels.
 
-Et finalement, pourquoi laisser sur la table les 4200 € de Compte Personnel de Formation déjà acquis ?
+Et finalement, pourquoi laisser sur la table les 3200 € de Compte Personnel de Formation déjà acquis ?
+Merci à Orange qui a accepté ma demande de formation via le CPF, qui a complété les 1000 € manquants, et me permet de passer 3 mois (intenses) à travailler sur mon projet. (moyennant de continuer mon job actuel en dehors des horaires de cours O'Clock).
 
 ## Quel contenu ?
+Réalisation d'une première "maquette" avec ce que j'avais en tête. Au bout de 6 semaines il s'avère que ce que j'imaginais tient la route.
+Je peuxs créer du contenu, donc faire quelques recherches sur le sake, apprendre des choses sur les départements, faire du japonais. Cela prends du temps sur le développement mais se montre utile car sert à créer et placer concrètement les éléments constitutifs du site.
+Ayant les briques de contenu que je souhaitais, je constate que ce que j'apprends en cours peut être réalisé fonctionnellement et donne le résultat attendu.
+
+Globalement, une page d'accueil et une barre de navigation (pas un "burger bar" de base) qui me permet d'aller vers : Expériences, Brasseries, Marques, Préfectures.
+Chacune des pages dispose d'une structure identique.
 
 1. Header
-- Sur la gauche. A coup sur, une photo de mon petit bouddha favori.
+- Un grad bandeau avec une photo sympa sur les éléments constitutifs du sake.
+- Sur la gauche. A coup sur, une photo de mon petit bouddha favori (mon "logo", pas encore réalisé. Petite touche encore plus perso à ajouter à la fin).
 - sur la droite la possibilité de basculer du français au japonais. Simple menu déroulant à 2 entrées (ou 3 si anglais). Essayer avec la traduction automatique DeepL ?
-- au centre, des renvois à d'autres pages (sujets : types de sake, reportages/entrées précédentes, ...)
-  
-2. Main
 
-- Une grand carte interactive du Japon (OpenStreetMap ou Google Map ? Le plus pertinent pour le Japon).
-- Chaque tag envoie vers la page correspondante :
-  - page mes-expériences : des articles (avec une date). Affichage du plus récent et accès aux autres : rangés par dates + tags (région, nom, marque, brasserie).
-  - page mes_adresses : essentiellement des textes récupérant des infos tirées des sites. Ou d'articles sur les brasseries et leur sake. Auxquelles j'ajoute mes remarques personnelles (peu de chances que j'ai essayé tous les sake donc préciser lesquels et pourquoi)
+2. Barre de navigation
+- Avec les renvois aux autres pages 
+  
+4. Main
+Page d'accueil.
+Traitants de sujets globaux : types de sake, de fabrication, un petit historique de la production,  ...). Avec une grand carte interactive du Japon (OpenStreetMap ou Google Map ? Le plus pertinent pour le Japon).
+
+Page Expériences.
+Des articles (avec une date). Affichage du plus récent et accès aux autres : rangés par dates + tags (région, nom, marque, brasserie).
+
+Page mes_adresses : essentiellement des textes récupérant des infos tirées des sites. Ou d'articles sur les brasseries et leur sake. Auxquelles j'ajoute mes remarques personnelles (peu de chances que j'ai essayé tous les sake donc préciser lesquels et pourquoi)
   - page mes_marques : essentiellement un tableau. Structure à définir mais avec les données de la BD : marques, nom de la brasserie, adresse, une ou plusieurs photos de la brasserie, lien vers le site, photos des sake que j'ai bu/essayés. **commentaire perso**....
   - page mes_préfectures : carte des préfectures du Japon (permet de la situer). On clique sur la carte. On trouve alors des commentaires sur ces préfectures : bouffe, riz, production sake, villes, y suis passé ou pas, quand ? a quelle occasion....
   On peut penser aussi a un petit slider avec quelques photos caractéristiques.
