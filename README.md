@@ -8,7 +8,7 @@ Préparation pour la construction de mon site sur le sake
 ## Quel intérêt ?
 > Utiliser l'internet c'est bien. Comprendre les technologies qui sous-tendent ce "miracle" c'est mieux. Un exemple, le MOOC FUN "web sémantique et web de donnés". Sans être allé jusqu'au bout, parce que ce qui était présenté n'était en fait qu'une proposition de structuration, pas la réalité terrain des méthodes employées, on peut commencer à comprendre ce qui structure le web.
 
-Plus proche de la formation actuelle, le MOOC [Concevez votre site web avec PHP et MySQL](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql). Complété à 70%, il m'a aiguillé vers la formation actuelle et m'a donné les bases de compréhension de la complexité sous-jascente à la construction d'un site web.
+Plus proche de la formation actuelle, le MOOC [Concevez votre site web avec PHP et MySQL](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql). Il m'a aiguillé vers la formation actuelle et m'a donné les bases de compréhension de la complexité sous-jascente à la construction d'un site web.
 
 Restait à trouver un sujet motivant pour mettre en oeuvre les technologies et occuper activement la retraite à venir, autrement que par d'intéressantes analyses de données. Pourquoi pas le **sake** car avec 1500 brasseries encore en activité il y a matière à faire de nombreuses excursions "culturelles" dans des endroits plus ou moins "originaux" hors des lieux touristiques habituels.
 
