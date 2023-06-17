@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+
 <head>
 	<?php include '../Templates/partials/head-content.php'; ?>
-	<title>Sake du Japon</title>
+	<title>Les sake du Japon</title>
 </head>
+
 
 <?php
     // J'inclus mon header
