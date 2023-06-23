@@ -32,9 +32,50 @@ var_dump($brasseriesCaractList[4]);
 
 // O.K. et pour chopper tout d'un coup, un foreach
 foreach ($brasseriesCaractList as $key => $value) {
-    // var_dump($dataArticlesList[$key]);
-    echo " La clé {$key} c'est déjà ça";
+    // var_dump($brasseriesCaractList[$key]); fonctionne et me balance la totalité de l'indentation correspondante
+    echo " La clé $key c'est déjà ça <br>"; // Y veut pas (peut pas!) donner la valeur car OBJET
 }
-// Y veut pas (peut pas!) donner la valeur car Tableau
+
+// Si on veut parcourir une ligne, marche pas :
+foreach ($firstLinePhil as $key => $value) {
+    echo " Les propriétés de firstLinePhil : $value<br>";
+} // n'affiche strictement rien
+
+
+
+// voyons comment utiliser les fonctions get définies dans ma classe :
+// echo $firstLinePhil->brasserie;     fatal error car j'ai défini brasserie en private
+echo 'brasserie de la première indentation $firstLinePhil avec un simple echo :<br>';
+echo $firstLinePhil-> getBrasserie();
+echo "<br>écrit différemment, directement à partir du tableau associatif brasseriesCaractList :". $brasseriesCaractList[1] -> getBrasserie();
+echo "si je veux la marque de la brasserie Takara : ".$brasseriesCaractList[4] -> getMarque();
+echo "<br>si je veux la préfecture de la marque Nanakanba : ".$brasseriesCaractList[3] -> getPrefecture();
+// O.K. tout fonctionne, on est dans du ligne/colonne id/variable prélude aux BDD
+
+echo '<br>brasserie de la première indentation $firstLinePhil avec var_dump : <br> ';
+var_dump($firstLinePhil-> getBrasserie()); //me donne: /var/www/html/PhilippeDaste.github.io/inc/indentation-tableau-recapitulatif.php:45:string 'Asahi 旭' (length=9)
+
+
+// OK
+
+// voyons comment utiliser les fonctions set définies dans ma classe :
+// Dassai 34.125508639289265, 132.00421623844468 récupérées su Google
+$firstLinePhil-> setLatitude(34.125508639289265);
+echo "Latitude de Dassai : " .$firstLinePhil-> getLatitude()."<br>";
+
+$firstLinePhil-> setLongitude(132.00421623844468);
+echo "Longitude de Dassai : " .$firstLinePhil-> getLongitude()."<br>";
+
+$firstLinePhil -> setRemarque("Dassai 39, ma marque préférée.39 c'est le taux de polissage du riz. 39 en japonais se prononce san (3) kyu(9). En anglais Thank you...");
+echo "remarque de Dassai : " .$firstLinePhil-> getRemarque(). "<br>";
+
+/* ce qui ne marche pas
+echo $firstLinePhil; */
+
+// ce qui marche
+var_dump($brasseriesCaractList[1]);
 
 ?>
+
+<!-- en html, me donne simplement la valeur recherchée-->
+<p>brasserie de la première indentation $firstLinePhil avec html : <?= $firstLinePhil->getBrasserie() ?></p>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="266" height="560" viewBox="0 0 266 560" xmlns="http://www.w3.org/2000/svg">
+<rect id="frame" x="0" y="0" width="266" height="560" fill="#f7f7f7" stroke="none" stroke-width="0"/>
+
+<!-- Association renvoi vers -->
+<g>
+	<line x1="204" y1="128" x2="64" y2="128" stroke="#9970ab" stroke-width="2"/>
+	<text x="127" y="145" fill="#1b7837" font-family="Verdana" font-size="12">0,1</text>
+	<line x1="64" y1="297" x2="64" y2="128" stroke="#9970ab" stroke-width="2"/>
+	<text x="69" y="204" fill="#1b7837" font-family="Verdana" font-size="12">1,N</text>
+	<g>
+		<path d="M91 103 a14 14 90 0 1 14 14 V128 h-82 V117 a14 14 90 0 1 14 -14" fill="#c2a5cf" stroke="#c2a5cf" stroke-width="0"/>
+		<path d="M105 128 v11 a14 14 90 0 1 -14 14 H37 a14 14 90 0 1 -14 -14 V128 H82" fill="#e7d4e8" stroke="#e7d4e8" stroke-width="0"/>
+		<rect x="23" y="103" width="82" height="50" fill="none" rx="14" stroke="#9970ab" stroke-width="2"/>
+		<line x1="23" y1="128" x2="105" y2="128" stroke="#9970ab" stroke-width="1"/>
+		<text x="30" y="120.75" fill="#000" font-family="Verdana" font-size="12">renvoi vers</text>
+	</g>
+</g>
+
+<!-- Association peut concerner -->
+<g>
+	<line x1="204" y1="128" x2="204" y2="297" stroke="#9970ab" stroke-width="2"/>
+	<text x="209" y="264" fill="#1b7837" font-family="Verdana" font-size="12">0,1</text>
+	<line x1="204" y1="449" x2="204" y2="297" stroke="#9970ab" stroke-width="2"/>
+	<text x="209" y="339" fill="#1b7837" font-family="Verdana" font-size="12">1,N</text>
+	<g>
+		<path d="M243 272 a14 14 90 0 1 14 14 V297 h-106 V286 a14 14 90 0 1 14 -14" fill="#c2a5cf" stroke="#c2a5cf" stroke-width="0"/>
+		<path d="M257 297 v11 a14 14 90 0 1 -14 14 H165 a14 14 90 0 1 -14 -14 V297 H106" fill="#e7d4e8" stroke="#e7d4e8" stroke-width="0"/>
+		<rect x="151" y="272" width="106" height="50" fill="none" rx="14" stroke="#9970ab" stroke-width="2"/>
+		<line x1="151" y1="297" x2="257" y2="297" stroke="#9970ab" stroke-width="1"/>
+		<text x="158" y="289.75" fill="#000" font-family="Verdana" font-size="12">peut concerner</text>
+	</g>
+</g>
+
+<!-- Association on peut trouver -->
+<g>
+	<line x1="64" y1="297" x2="64" y2="449" stroke="#9970ab" stroke-width="2"/>
+	<text x="69" y="399" fill="#1b7837" font-family="Verdana" font-size="12">0,1</text>
+	<line x1="204" y1="449" x2="64" y2="449" stroke="#9970ab" stroke-width="2"/>
+	<text x="126" y="466" fill="#1b7837" font-family="Verdana" font-size="12">1,N</text>
+	<g>
+		<path d="M105 424 a14 14 90 0 1 14 14 V449 h-110 V438 a14 14 90 0 1 14 -14" fill="#c2a5cf" stroke="#c2a5cf" stroke-width="0"/>
+		<path d="M119 449 v11 a14 14 90 0 1 -14 14 H23 a14 14 90 0 1 -14 -14 V449 H110" fill="#e7d4e8" stroke="#e7d4e8" stroke-width="0"/>
+		<rect x="9" y="424" width="110" height="50" fill="none" rx="14" stroke="#9970ab" stroke-width="2"/>
+		<line x1="9" y1="449" x2="119" y2="449" stroke="#9970ab" stroke-width="1"/>
+		<text x="17" y="441.75" fill="#000" font-family="Verdana" font-size="12">on peut trouver</text>
+	</g>
+</g>
+
+<!-- Entity ARTICLE -->
+<g>
+	<g>
+		<rect x="153" y="9" width="102" height="25" fill="#a6dba0" stroke="#a6dba0" stroke-width="0" opacity="1"/>
+		<rect x="153" y="34" width="102" height="213" fill="#d9f0d3" stroke="#d9f0d3" stroke-width="0" opacity="1"/>
+		<rect x="153" y="9" width="102" height="238" fill="none" stroke="#5aae61" stroke-width="2" opacity="1"/>
+		<line x1="153" y1="34" x2="255" y2="34" stroke="#5aae61" stroke-width="1"/>
+	</g>
+	<text x="178" y="26.75" fill="#000" font-family="Verdana" font-size="12">ARTICLE</text>
+	<text x="158" y="51.8" fill="#000" font-family="Verdana" font-size="12">article_code</text>
+	<line x1="158" y1="54" x2="232" y2="54" stroke="#000" stroke-width="1"/>
+	<text x="158" y="68.8" fill="#000" font-family="Verdana" font-size="12">titre</text>
+	<text x="158" y="85.8" fill="#000" font-family="Verdana" font-size="12">contenu</text>
+	<text x="158" y="102.8" fill="#000" font-family="Verdana" font-size="12">date_creation</text>
+	<text x="158" y="119.8" fill="#000" font-family="Verdana" font-size="12">lien_brasserie</text>
+	<text x="158" y="136.8" fill="#000" font-family="Verdana" font-size="12">lien_prefecture</text>
+	<text x="158" y="153.8" fill="#000" font-family="Verdana" font-size="12">image1</text>
+	<text x="158" y="170.8" fill="#000" font-family="Verdana" font-size="12">image2</text>
+	<text x="158" y="187.8" fill="#000" font-family="Verdana" font-size="12">image3</text>
+	<text x="158" y="204.8" fill="#000" font-family="Verdana" font-size="12">image4</text>
+	<text x="158" y="221.8" fill="#000" font-family="Verdana" font-size="12">image5</text>
+	<text x="158" y="238.8" fill="#000" font-family="Verdana" font-size="12">image6</text>
+</g>
+
+<!-- Entity PREFECTURE -->
+<g>
+	<g>
+		<rect x="9" y="212" width="110" height="25" fill="#a6dba0" stroke="#a6dba0" stroke-width="0" opacity="1"/>
+		<rect x="9" y="237" width="110" height="145" fill="#d9f0d3" stroke="#d9f0d3" stroke-width="0" opacity="1"/>
+		<rect x="9" y="212" width="110" height="170" fill="none" stroke="#5aae61" stroke-width="2" opacity="1"/>
+		<line x1="9" y1="237" x2="119" y2="237" stroke="#5aae61" stroke-width="1"/>
+	</g>
+	<text x="25" y="229.75" fill="#000" font-family="Verdana" font-size="12">PREFECTURE</text>
+	<text x="14" y="254.8" fill="#000" font-family="Verdana" font-size="12">prefecture_code</text>
+	<line x1="14" y1="257" x2="113" y2="257" stroke="#000" stroke-width="1"/>
+	<text x="14" y="271.8" fill="#000" font-family="Verdana" font-size="12">nom</text>
+	<text x="14" y="288.8" fill="#000" font-family="Verdana" font-size="12">sliderimage1</text>
+	<text x="14" y="305.8" fill="#000" font-family="Verdana" font-size="12">sliderimage2</text>
+	<text x="14" y="322.8" fill="#000" font-family="Verdana" font-size="12">sliderimage3</text>
+	<text x="14" y="339.8" fill="#000" font-family="Verdana" font-size="12">sliderimage4</text>
+	<text x="14" y="356.8" fill="#000" font-family="Verdana" font-size="12">sliderimage5</text>
+	<text x="14" y="373.8" fill="#000" font-family="Verdana" font-size="12">sliderimage6</text>
+</g>
+
+<!-- Entity BRASSERIE -->
+<g>
+	<g>
+		<rect x="153" y="347" width="102" height="25" fill="#a6dba0" stroke="#a6dba0" stroke-width="0" opacity="1"/>
+		<rect x="153" y="372" width="102" height="179" fill="#d9f0d3" stroke="#d9f0d3" stroke-width="0" opacity="1"/>
+		<rect x="153" y="347" width="102" height="204" fill="none" stroke="#5aae61" stroke-width="2" opacity="1"/>
+		<line x1="153" y1="372" x2="255" y2="372" stroke="#5aae61" stroke-width="1"/>
+	</g>
+	<text x="169" y="364.75" fill="#000" font-family="Verdana" font-size="12">BRASSERIE</text>
+	<text x="158" y="389.8" fill="#000" font-family="Verdana" font-size="12">brasserie_code</text>
+	<line x1="158" y1="392" x2="250" y2="392" stroke="#000" stroke-width="1"/>
+	<text x="158" y="406.8" fill="#000" font-family="Verdana" font-size="12">prefecture</text>
+	<text x="158" y="423.8" fill="#000" font-family="Verdana" font-size="12">brasserie</text>
+	<text x="158" y="440.8" fill="#000" font-family="Verdana" font-size="12">adresse</text>
+	<text x="158" y="457.8" fill="#000" font-family="Verdana" font-size="12">marque</text>
+	<text x="158" y="474.8" fill="#000" font-family="Verdana" font-size="12">marque2</text>
+	<text x="158" y="491.8" fill="#000" font-family="Verdana" font-size="12">marque3</text>
+	<text x="158" y="508.8" fill="#000" font-family="Verdana" font-size="12">remarque</text>
+	<text x="158" y="525.8" fill="#000" font-family="Verdana" font-size="12">latitude</text>
+	<text x="158" y="542.8" fill="#000" font-family="Verdana" font-size="12">longitude</text>
+</g>
+</svg>

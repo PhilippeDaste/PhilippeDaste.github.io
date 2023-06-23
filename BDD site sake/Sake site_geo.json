@@ -1,0 +1,29 @@
+{
+  "width": 266,
+  "height": 560,
+  "cx": [
+    [ "renvoi vers", 64 ],
+    [ "ARTICLE", 204 ],
+    [ "PREFECTURE", 64 ],
+    [ "peut concerner", 204 ],
+    [ "on peut trouver", 64 ],
+    [ "BRASSERIE", 204 ]
+  ],
+  "cy": [
+    [ "renvoi vers", 128 ],
+    [ "ARTICLE", 128 ],
+    [ "PREFECTURE", 297 ],
+    [ "peut concerner", 297 ],
+    [ "on peut trouver", 449 ],
+    [ "BRASSERIE", 449 ]
+  ],
+  "shift": [
+    [ "renvoi vers,ARTICLE,0", 0 ],
+    [ "renvoi vers,PREFECTURE,0", 0 ],
+    [ "peut concerner,ARTICLE,0", 0 ],
+    [ "peut concerner,BRASSERIE,0", 0 ],
+    [ "on peut trouver,PREFECTURE,0", 0 ],
+    [ "on peut trouver,BRASSERIE,0", 0 ]
+  ],
+  "ratio": []
+}

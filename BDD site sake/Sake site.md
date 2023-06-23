@@ -1,0 +1,3 @@
+**ARTICLE** (<ins>article_code</ins>, titre, contenu, date_creation, lien_brasserie, lien_prefecture, image1, image2, image3, image4, image5, image6, _#prefecture_code_, _#brasserie_code_)<br>
+**BRASSERIE** (<ins>brasserie_code</ins>, prefecture, brasserie, adresse, marque, marque2, marque3, remarque, latitude, longitude)<br>
+**PREFECTURE** (<ins>prefecture_code</ins>, nom, sliderimage1, sliderimage2, sliderimage3, sliderimage4, sliderimage5, sliderimage6, _#brasserie_code_)

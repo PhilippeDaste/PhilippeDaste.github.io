@@ -6,19 +6,19 @@ class TableauRecapitulatif
     private $brasserie ;
     private $prefecture;
     private $adresse;
-    private $marque1;
+    private $marque;
     private $marque2;
     private $marque3;
     private $remarque;
     private $latitude;
     private $longitude;
 
-    public function __construct($brasserie, $prefecture, $adresse, $marque1, $marque2 ="", $marque3="",$remarque="", $latitude="", $longitude="")
+    public function __construct($brasserie, $prefecture, $adresse, $marque, $marque2 ="", $marque3="", $remarque="", $latitude="", $longitude="")
         {
             $this->brasserie = $brasserie;
             $this->prefecture = $prefecture;
             $this->adresse = $adresse;
-            $this->marque1 = $marque1;
+            $this-> marque = $marque;
             $this->marque2 = $marque2;
             $this->marque3 = $marque3;
             $this->remarque = $remarque;
@@ -36,6 +36,7 @@ class TableauRecapitulatif
         if(is_string($brasserie)) {
             $this->brasserie = $brasserie;
         }
+        return $this;
     }
 
 
@@ -49,6 +50,7 @@ class TableauRecapitulatif
         if(is_string($prefecture)) {
             $this->prefecture = $prefecture;
         }
+        return $this;
     }
 
     //adresse
@@ -61,19 +63,20 @@ class TableauRecapitulatif
         if(is_string($adresse)) {
             $this->adresse = $adresse;
         }
-        
+        return $this;
     }
     
     //marque1
-    public function getMarque1()
+    public function getMarque()
     {
-        return $this->marque1;
+        return $this->marque;
     }
-    public function setMarque1($marque1)
+    public function setMarque($marque)
     {
-        if(is_string($marque1)) {
-            $this->marque1 = $marque1;
+        if(is_string($marque)) {
+            $this->marque = $marque;
         }
+        return $this;
     }
     
     //marque2
@@ -86,6 +89,7 @@ class TableauRecapitulatif
         if(is_string($marque2)) {
             $this->marque2 = $marque2;
         }
+        return $this;
     }
     
     //marque3
@@ -98,7 +102,7 @@ class TableauRecapitulatif
         if(is_string($marque3)) {
             $this->marque3 = $marque3;
         }
-
+        return $this;
     }
     
     //remarque
@@ -106,11 +110,12 @@ class TableauRecapitulatif
     {
         return $this->remarque;
     }
-    public function setRearque($remarque)
+    public function setRemarque($remarque)
     {
-            if(is_string($remarque)){
-                $this->remarque = $remarque;
-            }
+        if(is_string($remarque)){
+            $this->remarque = $remarque;
+        }
+        return $this;
     }
     
     
@@ -124,6 +129,7 @@ class TableauRecapitulatif
         if (is_float($latitude)){
             $this->latitude = $latitude;
         }
+        return $this;
     }
     
     //longitude
@@ -136,6 +142,7 @@ class TableauRecapitulatif
         if (is_float($longitude)){
             $this->longitude = $longitude;
         }
+        return $this;
     }   
     
 }

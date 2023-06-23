@@ -1,0 +1,8 @@
+renvoi vers, 01 ARTICLE, 1N PREFECTURE
+ARTICLE: article_code, titre, contenu, date_creation, lien_brasserie, lien_prefecture, image1, image2, image3, image4, image5, image6
+
+PREFECTURE: prefecture_code, nom, sliderimage1, sliderimage2,sliderimage3, sliderimage4, sliderimage5, sliderimage6
+peut concerner, 01 ARTICLE, 1N BRASSERIE
+
+on peut trouver, 01 PREFECTURE, 1N BRASSERIE
+BRASSERIE: brasserie_code, prefecture, brasserie, adresse, marque, marque2, marque3, remarque, latitude, longitude

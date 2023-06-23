@@ -1,8 +1,8 @@
 
 // Faire le lien entre la page html sur Shimane et le formulaire, menu déroulant, qui permet de sélectionner un département.
 
-// dans notre select/option il y a une classe select pour retrouver le <select> et une value pour chaque <option>
 
+// dans notre select/option il y a une classe select pour retrouver le <select> et une value pour chaque <option>
 let choixPrefecture = document.querySelector(".select_department");
 console.log(choixPrefecture); // fonctionne, on a fait appel à la classe plutôt qu'àl'id (department)
 let nomPrefecture = choixPrefecture.value;
@@ -22,8 +22,13 @@ choixPrefecture.addEventListener("change", function(event) {
 
 /* 
 AAARGH !!!! Pas foutu de récupérer le résultat du change !!!!
+
+function recupPrefecture (nomPrefecture) {
+    nomPrefecture = choixPrefecture.value;
+    console.log(nomPrefecture);
+    return nomPrefecture
+}
 */
-nomPrefecture= choixPrefecture.options[choixPrefecture.selectedIndex].text;
 
 
 // Pour voir, créons un élément simple, un affichage de la préfecture choisie sur la page web, avant de lier une url
@@ -41,10 +46,3 @@ createLink.innerText="Shimane";
 let positionLink = document.querySelector("h3");
 positionLink.appendChild(createLink); // très moche mais fonctionne si on clique sur le lien
 
-
-
-/* let select = document.querySelector("select");
-let li/* enPrefecture = `
-            <a href="../HTML/departement_Shimane.html> </a>
-`;
-select.innerHTML = lienPrefecture; */
