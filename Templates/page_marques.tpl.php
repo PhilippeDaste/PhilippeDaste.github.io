@@ -49,8 +49,124 @@
 
         </section>
 
+
+
+
+<!-- TODO :
+1) Créer une branche git : connexion_BDD
+
+2) Dans oclock Adminer, tester la requête SQL qui doit me permettre de récupérer les éléments que j'ai actuellemant dans la Tableau affiché sur "marques"
+SELECT brewery_name, prefecture_name, brewery_address, brand_name
+FROM brewery
+LEFT JOIN prefecture ON prefecture.id= brewery.prefecture_id
+LEFT JOIN brands ON brands.brewery_id=brewery.id
+
+3) déployer cette requête avec PDO (à l'ancienne) sur pages_marques.tpl.php (ici)
+
+4) faire un pull request vers Adélie
+-->
+
+
+<?php
+// -----------------------------------------------------------------------
+// Etape 1 : établir la connexion à la base de données
+// -----------------------------------------------------------------------
+
+// Le DSN (Data Source Name) contient une partie des informations requises
+// pour se connecter à la BDD :
+// - mysql : le nom du pilote/driver pour communiquer avec le logiciel de BDD
+// - dbname : le nom de la base de données
+// - host : l'adresse du serveur qui héberge le logiciel de BDD (pour nous la VM => localhost)
+// - charset : encodage des caractères pour les échanges entre PHP-PDO et le logiciel de BDD
+$dsn = 'mysql:dbname=SakeSite;host=127.0.0.1;charset=UTF8';
+
+// En vrai, bien entendu on n'utilise pas un compte admin qui peut tout faire, on va plutôt créer un user
+// spécifique pour notre appli (notre appli est un utilisateur) qui pourra faire certaines actions seulement.
+$user = 'SakeSite';
+$password = '@bracadabrA23';
+
+// TRY CATCH :
+// On essaie d'exécuter le code présent dans le try :
+// - Si jamais il y a une erreur (même fatale), PHP continue quand même en se "téléportant" directement dans le catch
+// (le catch intercepte l'erreur).
+// - On exécute alors le code situé dans le catch.
+// - Une fois le catch terminé, on poursuit le code situé après le try/catch.
+// - S'il n'y a pas d'erreur lors de l'exécution du code présent dans le try,
+// alors le code du catch n'est pas exécuté et on continue à exécuter le code ligne par ligne.
+try {
+    $pdoDBConnexion = new PDO(
+        $dsn,
+        $user,
+        $password,
+        [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
+            // Pour les tests, PDO::ERRMODE_WARNING permet d'avoir des indices sur les
+            // erreurs qui se produisent lors de l'utilisation de la connexion PDO
+            // et notamment pour l'exécution des requêtes.
+            // ATTENTION : En production, on aurait mis : PDO::ERRMODE_SILENT car on ne veut pas
+            // donner accès à tout le monde aux informations disponibles dans les
+            // messages d'erreurs d'accès à la BDD
+            // => pour éviter les risques de sécurité
+        ]
+    );
+
+    // Si la connexion à la DB a échouée, ces lignes là sont ignorées, on se retrouve directement transporté dans le catch
+    // ...
+    // ...
+    // ...
+
+} catch(PDOException $exception) {
+    exit("Echec de la connexion : " . $exception->getMessage());
+}
+
+// Si la connexion a réussi, on obtient un objet PDO
+var_dump($pdoDBConnexion); //check
+
+// -----------------------------------------------------------------------
+// Etape 2 : écrire sa requête SQL dans une chaîne de caractères
+// -----------------------------------------------------------------------
+$sql = "SELECT brewery_name, prefecture_name, brewery_address, brand_name
+FROM brewery
+LEFT JOIN prefecture ON prefecture.id= brewery.prefecture_id
+LEFT JOIN brands ON brands.brewery_id=brewery.id";
+var_dump($sql); // check
+
+// -----------------------------------------------------------------------
+// Etape 3 : exécuter la requête de type SELECT
+// -----------------------------------------------------------------------
+
+// query retourne un objet PDOStatement qui représente une sorte
+// de boite de résultats (mais pas exploitable directement)
+// PDOStatement nous sert d'intermédiaire pour pouvoir récupérer
+// le résultat. Il nous faudra une étape supplémentaire pour
+// exploiter ce résultat avec PHP et accéder enfin aux données.
+$pdoStatement = $pdoDBConnexion->query($sql);
+
+// La méthode query retourne soit false en cas d'erreur, soit un objet PDOStatement
+// Ici, on traite le cas où la requête échoue
+if ($pdoStatement === false) {
+    // Gestion de l'erreur
+    // On peut récupérer la dernière erreur survenue sur notre connexion PDO
+    var_dump($pdoDBConnexion->errorInfo());
+    // On peut éventuellement quitter le script ou afficher un message d'erreur...
+    exit("Problème lors de l'exécution de la requête");
+}
+
+var_dump($pdoStatement); // check
+
+$results = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
+var_dump($results); // check
+
+?>
+
+        <table><?=  "<tr>
+          <td>".$results[0]['brewery_name']."</td>
+          <td>".$results[0]['prefecture_name']."</td>
+          <td>".$results[0]['brewery_address']."</td>
+          <td>".$results[0]['brand_name']."<td></tr>" ?></table>
+    <!-- pas si loin du but mais code de merde. Il faut un foreach en plus.
+    Yaurait pas un package qui fasse ça correctement, avec un CSS ajustable et qu'on puisse avoir avec Composer ??? -->
     </main>
     <script src="../JS/letableau.js"></script>
 
-    
 </body>
