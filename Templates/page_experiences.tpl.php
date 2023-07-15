@@ -23,7 +23,7 @@
             Annecdote, comme la réception se terminait et que je discutais encore avec la dame qui présentait ce sake elle m'a donné la bouteille entammée.
         </p>
 
-        <img class="three" class="position_image" src="../images_sake/shichikanba_recadré.png" alt="logo shichikanba" width=" 200px" height="200px" >
+        <img class="three" class="position_image" src="../images/images_sake/shichikanba_recadré.png" alt="logo shichikanba" width=" 200px" height="200px" >
 
         <a class="four" class="position_lien" href="https://sake-hikami.co.jp/page-info/" target="_blank">La brasserie Ikami 簸上</a>    
 
@@ -46,7 +46,7 @@
            Bien entendu, le prix aussi était doublé... 21,80€ au lieu de 1200 Yens (10€ environ).
         </p>
         
-        <img  class="three" class="position_image" src="../images_sake/Shirakabekura_Kimoto.jpg" alt="Shirakabekura" style="width:400px;height:400px;">
+        <img  class="three" class="position_image" src="../images/images_sake/Shirakabekura_Kimoto.jpg" alt="Shirakabekura" style="width:400px;height:400px;">
 
 
         <a class ="four" class="position_lien" href="https://www.takarashuzo.co.jp/products/seishu/" target="_blank">La Brasserie Takara 宝 de Kobe</a>
@@ -79,7 +79,7 @@
         Aucun engrais chimique n'est toléré. Qui plus est, après la récolte, le taux de protéines est évalué et ne doit pas dépasser 6,4% !!<br>
         </p>
 
-        <img  class="three" class="position_image" src="../images_sake/Dewasakura/Mes_Dewasakura.PNG" alt="Mes Dewasakura"  style="width:550px;height:350px;">
+        <img  class="three" class="position_image" src="../images/images_sake/Dewasakura/Mes_Dewasakura.PNG" alt="Mes Dewasakura"  style="width:550px;height:350px;">
 
 
         <a class ="four" class="position_lien" href="https://www.dewazakura.co.jp/item/cat02/yukimegami48.html" target="_blank">La Brasserie Dewasakura 出羽桜 à Yamagata</a>
@@ -88,14 +88,14 @@
     <section class="accueil_photos">
 
             <div>
-                <img src="../images_sake/Dewasakura/yukimegami48-main.png" alt="Yukimegami" style="width: 300px;height: 300px;">
-                <img src="../images_sake/Dewasakura/sato-main.png" alt="Dewanosato" style="width:300px;height:300px;" >
-                <img src="../images_sake/Dewasakura/sansan3-main.png" alt="Sansan" style="width:300px;height:300px;">
+                <img src="../images/images_sake/Dewasakura/yukimegami48-main.png" alt="Yukimegami" style="width: 300px;height: 300px;">
+                <img src="../images/images_sake/Dewasakura/sato-main.png" alt="Dewanosato" style="width:300px;height:300px;" >
+                <img src="../images/images_sake/Dewasakura/sansan3-main.png" alt="Sansan" style="width:300px;height:300px;">
             </div>
             <div>
-                <img src="../images_sake/Dewasakura/yukiwakamaru-main.png" alt="Yukiwakamaru" style="width:300px;height:300px;">
-                <img src="../images_sake/Dewasakura/omachi-main.png" alt="Omachi" style="width:300px;height:300px;">
-                <img src="../images_sake/Dewasakura/tsuya-main.png" alt="Tsuyahime" style="width:300px;height:300px;">
+                <img src="../images/images_sake/Dewasakura/yukiwakamaru-main.png" alt="Yukiwakamaru" style="width:300px;height:300px;">
+                <img src="../images/images_sake/Dewasakura/omachi-main.png" alt="Omachi" style="width:300px;height:300px;">
+                <img src="../images/images_sake/Dewasakura/tsuya-main.png" alt="Tsuyahime" style="width:300px;height:300px;">
             </div>
     </section>
 
@@ -123,9 +123,67 @@
         Un parallèle avec la fleur qui veut que lorsqu'elle fleurit les feuilles tombent et que lorsque les feuilles poussent les fleurs se fanent. Impossible rencontre.
        
         </p>
-        <img  class="three" class="position_image" src="../images_sake/Mimurosugi.png" alt="Mimurosugi"  style="width:250px;height:550px;">
+        <img  class="three" class="position_image" src="../images/images_sake/Mimurosugi.png" alt="Mimurosugi"  style="width:250px;height:550px;">
         <a class ="four" class="position_lien" href="https://imanishisyuzou.com/" target="_blank">La maison Imanishi 今西 (Nara/Sakurai/Miwa)</a>  
     </section>
 
 
+    <?php
+// -----------------------------------------------------------------------
+// Variante avec la BDD SakeSite, je récupère le dernier article écrit par sa date de création
+// -----------------------------------------------------------------------
+
+$dsn = 'mysql:dbname=SakeSite;host=127.0.0.1;charset=UTF8';
+$user = 'SakeSite';
+$password = '@bracadabrA23';
+
+// TRY CATCH :
+
+try {
+    $pdoDBConnexion = new PDO(
+        $dsn,
+        $user,
+        $password,
+        [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
+
+        ]
+    );
+
+    // Si la connexion à la DB a échouée, ces lignes là sont ignorées, on se retrouve directement transporté dans le catch
+
+} catch(PDOException $exception) {
+    exit("Echec de la connexion : " . $exception->getMessage());
+}
+
+// Si la connexion a réussi, on obtient un objet PDO
+// check  var_dump($pdoDBConnexion);
+
+$sql = "SELECT title, content, MAX(created_at)
+FROM articles";
+
+var_dump($sql); 
+
+$pdoStatement = $pdoDBConnexion->query($sql);
+
+// La méthode query retourne soit false en cas d'erreur, soit un objet PDOStatement
+// Ici, on traite le cas où la requête échoue
+if ($pdoStatement === false) {
+    // Gestion de l'erreur
+    // On peut récupérer la dernière erreur survenue sur notre connexion PDO
+    var_dump($pdoDBConnexion->errorInfo());
+    // On peut éventuellement quitter le script ou afficher un message d'erreur...
+    exit("Problème lors de l'exécution de la requête");
+}
+
+// check  var_dump($pdoStatement);
+
+$results = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
+ var_dump($results); 
+?>
+
+    <section>
+        <p><?= $results[0]['title']?></p>
+        <p><?= $results[0]['content']?></p>
+    </section>
 </body>
