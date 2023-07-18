@@ -150,7 +150,7 @@ if ($pdoStatement === false) {
     exit("Problème lors de l'exécution de la requête");
 }
 
-// check  var_dump($pdoStatement);
+// check var_dump($pdoStatement);
 
 $results = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
  var_dump($results); 
@@ -170,10 +170,10 @@ $results = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
 
                     <?php  foreach ($results as $valeur) {   ?>
                     <tr> 
-                        <td><?= "$results [$valeur]['brewery_name']"?></td>
-                        <td><?= "$results[$valeur]['prefecture_name']"?></td>
-                        <td><?="$results[$valeur]['brewery_address']"?></td>
-                        <td><?= "$results[$valeur]['brand_name']"?><td>
+                        <td><?= $valeur['brewery_name']?></td>
+                        <td><?= $valeur['prefecture_name']?></td>
+                        <td><?=$valeur['brewery_address']?></td>
+                        <td><?= $valeur['brand_name']?></td>
                     </tr>  
                     <?php
                                     }

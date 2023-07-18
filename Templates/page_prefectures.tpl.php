@@ -15,14 +15,14 @@
 
         <h2>Présentation des préfectures ou j'ai testé du sake</h2>
 
-        <form action=" http://localhost/PhilippeDaste.github.io/PHP/page_prefectures.php" method="get"></form>
+        <form id="prefecture-form" method="get" action="./prefecture.php">
         <p >
-                <label for="department">Sélectionnez une préfecture : </label>
-                    <select class="select" name="department" id="department">
-                        <option value="Hyogo">Hyogo 兵庫 </option>
-                        <option value="Shimane">Shimane  島根 </option>
-                        <option value="Tochigi">Tochigi 栃木 </option>
-                        <option value="Yamagata">Yamagata 山形 </option>
+                <label for="prefecture">Sélectionnez une préfecture : </label>
+                    <select class="select" name="prefecture" id="prefecture">
+                        <option value="hyogo">Hyogo 兵庫 </option>
+                        <option value="shimane">Shimane  島根 </option>
+                        <option value="tochigi">Tochigi 栃木 </option>
+                        <option value="yamagata">Yamagata 山形 </option>
 
                     </select>
         </p>
@@ -60,3 +60,4 @@
           </section>
 
     </main>
+    <script src="../JS/rdvPrefectureShimane.js"></script>

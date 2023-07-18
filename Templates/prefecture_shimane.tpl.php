@@ -53,5 +53,8 @@
 
 </p>
 
+<div>
+    <iframe src="https://www.mapcustomizer.com/map/Brasseries%20sake%20Shimane"/>
+</div>
 
 </body>
