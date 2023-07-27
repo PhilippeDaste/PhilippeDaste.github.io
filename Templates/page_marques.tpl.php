@@ -6,14 +6,14 @@
         <!--A priori pas besoin de header ni de navigation-->
         <h2>Présentation synthétique des différentes marques</h2>
 	
-        <section>
+
           <!--La marque, chaque brasserie pouvant en avoir plusieurs, avec son historique-->
                 <p>La marque, chaque brasserie pouvant en avoir plusieurs, avec son historique</p>
             
-        </section>
 
+                <!-- première version de mon tableau, avec html et JS pour la dernière ligne
         <section>
-            <!-- je met un tableau avec les informations de base sur les différentes brasserie-->
+
             <table class="brasseries_table">
                 <caption>Liste des brasseries testées</caption>
                 <tr>
@@ -22,18 +22,18 @@
                     <th>Adresse 住所</th>
                     <th>Marque(s) 銘柄</th>
                 </tr>
- 
+
                 <tr>
                     <td>Yamaguchi 山口</td>
                     <td>Asahi 旭</td>
-                    <td>〒742-0422 山口県岩国市周東町獺越2167-4 </td>
+                    <td>〒742-$value422 山口県岩国市周東町獺越2167-4 </td>
                     <td>Dassai 獺祭</td>
                 </tr>
 
                 <tr>
                     <td>Yamagata 山形</td>
                     <td>Dewasakura 出羽桜</td>
-                    <td>〒994-0044 山形県天童市一日町一丁目4番6号 </td>
+                    <td>〒994-$value44 山形県天童市一日町一丁目4番6号 </td>
                     <td>Dewasakura 出羽桜</td>
                 </tr>
 
@@ -46,9 +46,7 @@
 
 
             </table>
-
-        </section>
-
+-->
 
 
 
@@ -120,7 +118,7 @@ try {
 }
 
 // Si la connexion a réussi, on obtient un objet PDO
-var_dump($pdoDBConnexion); //check
+// check  var_dump($pdoDBConnexion);
 
 // -----------------------------------------------------------------------
 // Etape 2 : écrire sa requête SQL dans une chaîne de caractères
@@ -129,7 +127,7 @@ $sql = "SELECT brewery_name, prefecture_name, brewery_address, brand_name
 FROM brewery
 LEFT JOIN prefecture ON prefecture.id= brewery.prefecture_id
 LEFT JOIN brands ON brands.brewery_id=brewery.id";
-var_dump($sql); // check
+// check  var_dump($sql); 
 
 // -----------------------------------------------------------------------
 // Etape 3 : exécuter la requête de type SELECT
@@ -152,21 +150,40 @@ if ($pdoStatement === false) {
     exit("Problème lors de l'exécution de la requête");
 }
 
-var_dump($pdoStatement); // check
+// check var_dump($pdoStatement);
 
 $results = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
-var_dump($results); // check
+// check var_dump($results); 
 
 ?>
 
-        <table><?=  "<tr>
-          <td>".$results[0]['brewery_name']."</td>
-          <td>".$results[0]['prefecture_name']."</td>
-          <td>".$results[0]['brewery_address']."</td>
-          <td>".$results[0]['brand_name']."<td></tr>" ?></table>
-    <!-- pas si loin du but mais code de merde. Il faut un foreach en plus.
-    Yaurait pas un package qui fasse ça correctement, avec un CSS ajustable et qu'on puisse avoir avec Composer ??? -->
+            <section>
+            <!-- je met un tableau avec les informations de base sur les différentes brasserie-->
+                <table class="brasseries_table">
+                    <caption>Liste des brasseries testées</caption>
+                    <tr>
+                        <th>Brasserie 酒造</th>
+                        <th>Préfecture 県</th>
+                        <th>Adresse 住所</th>
+                        <th>Marque(s) 銘柄</th>
+                    </tr>
+
+                    <?php  foreach ($results as $valeur) {   ?>
+                    <tr> 
+                        <td><?= $valeur['brewery_name']?></td>
+                        <td><?= $valeur['prefecture_name']?></td>
+                        <td><?=$valeur['brewery_address']?></td>
+                        <td><?= $valeur['brand_name']?></td>
+                    </tr>  
+                    <?php
+                                    }
+                    ?>  
+                    <!-- Illegal offset type errors occur when you attempt to access an array index using an object or an array as the index key.-->
+                </table>
+            </section>
+
     </main>
+
     <script src="../JS/letableau.js"></script>
 
 </body>
