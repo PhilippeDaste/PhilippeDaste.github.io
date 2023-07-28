@@ -5,6 +5,13 @@
 
 
 /*Voyons ici nos balises*/
+#prefecture_map_position {
+    object-position: 50% 50%;
+    background-color: blue;
+    border: red 5px solid;
+    margin:100px;
+}
+
 
 h1 {
     font-size: 3em;

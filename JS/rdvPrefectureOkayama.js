@@ -2,9 +2,7 @@
 
 /********************
  *  refonte du fichier
- * ******************
- * 
-header("Location: ".$_POST['prefecture']."");*/
+ * *******************/
 
 // TODO 1 - récupérer l'élément form #prefecture-form
 const prefectureSelect = document.querySelector("#prefecture");

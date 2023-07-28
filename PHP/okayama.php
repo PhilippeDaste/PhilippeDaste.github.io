@@ -2,12 +2,15 @@
 <html lang="fr">
 <head>
 	<?php include '../Templates/partials/head-content.php'; ?>
-	<title>Sake mes régions</title>
+	<title>Sake mes adresses</title>
 </head>
 
 
+<script src="../JS/slider_okayama.js"></script>
+
 <?php
 
+/* {header("Location: ".$_POST['department']."");} */
 
     // J'inclus le header
     include "../Templates/header.php";
@@ -16,9 +19,8 @@
     include "../Templates/nav.php";
 
     // J'inclus le coeur de ma page_regions.php
-    include "../Templates/page_prefectures.tpl.php";
+    include "../Templates/prefecture_okayama.tpl.php";
 
     // J'inclus le footer
     include "../Templates/footer.php";
 ?>
-
