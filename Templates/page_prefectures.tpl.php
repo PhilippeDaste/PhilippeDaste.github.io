@@ -17,17 +17,14 @@
                 <label for="prefecture">Sélectionnez une préfecture : </label>
                     <select class="select" name="prefecture" id="prefecture">
                         <option value="hyogo">Hyogo 兵庫 </option>
+                        <option value="nara">Nara 奈良 </option>
+                        <option value="okayama">Okayama 岡山 </option>
                         <option value="shimane">Shimane  島根 </option>
                         <option value="tochigi">Tochigi 栃木 </option>
                         <option value="yamagata">Yamagata 山形 </option>
-                        <option value="Okayama">Okayama 岡山 </option>
+
                     </select>
         </p>
-
-        <!-- pas besoin de bouton :
-        <input type="submit" value="Go" title="valider pour aller à la page sélectionnée" /> 
-         echo( "./prefecture_".$_GET['prefecture'] .".php") ?>*/
-        -->
         
         </form>
 
@@ -43,5 +40,5 @@
 
 
     </main>
-    <script src="../JS/rdvPrefectureShimane.js"></script>
-    <script src="../JS/rdvPrefectureOkayama.js"></script>
+    <script src="../JS/rdvPrefectures.js"></script>
+   

@@ -1,7 +1,7 @@
 <body>
 
 
-    <h2>Page du département de Okayama</h2>
+    <h2>Prefecture de Okayama</h2>
 
     <div id="slider" >
         <img src="../images/images_okayama/great-seto-ohashi.jpg" alt="Le grand pont Seto ohashi"  id="slide" width="60%" height="500">
