@@ -7,7 +7,7 @@
 </head>
 
 
-<script src="../JS/slider_okayama.js"></script>
+<script src="<?= $_SERVER['BASE_URI'] ?>/../JS/slider_okayama.js"></script>
 
 <?php
 

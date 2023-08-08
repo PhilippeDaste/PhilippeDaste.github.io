@@ -7,7 +7,7 @@
 </head>
 
 
-<script src="../JS/slider.js"></script>
+<script src="<?= $_SERVER['BASE_URI'] ?>/../JS/slider.js"></script>
 
 <?php
 

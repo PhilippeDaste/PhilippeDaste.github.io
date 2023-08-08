@@ -7,7 +7,7 @@
 </head>
 
 
-<script src="../JS/slider_nara.js"></script>
+<script src="<?= $_SERVER['BASE_URI'] ?>/../JS/slider_nara.js"></script>
 
 <?php
 
