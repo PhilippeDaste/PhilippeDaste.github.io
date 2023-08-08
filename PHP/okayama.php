@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-	<?php include '../Templates/partials/head-content.php'; ?>
-	<title>Sake mes adresses</title>
+    <?php include __DIR__ . '/../Templates/partials/head-content.php'; ?>
+    <title>Sake mes adresses</title>
 </head>
 
 
@@ -12,15 +13,15 @@
 
 /* {header("Location: ".$_POST['department']."");} */
 
-    // J'inclus le header
-    include "../Templates/header.php";
+// J'inclus le header
+include __DIR__ . "/../Templates/header.php";
 
-    // J'inclus le nav
-    include "../Templates/nav.php";
+// J'inclus le nav
+include __DIR__ . "/../Templates/nav.php";
 
-    // J'inclus le coeur de ma page_regions.php
-    include "../Templates/prefecture_okayama.tpl.php";
+// J'inclus le coeur de ma page_regions.php
+include __DIR__ . "/../Templates/prefecture_okayama.tpl.php";
 
-    // J'inclus le footer
-    include "../Templates/footer.php";
+// J'inclus le footer
+include __DIR__ . "/../Templates/footer.php";
 ?>
