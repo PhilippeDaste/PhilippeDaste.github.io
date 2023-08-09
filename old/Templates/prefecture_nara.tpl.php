@@ -41,7 +41,9 @@
     <p>
         Sur l'agriculture dans la préfecture se rendre encore sur le site Japaen CROPs :  <a href="https://japancrops.com/en/prefectures/nara/" target="_blank">Japan CROPs</a>. 
 
-
+        Un bon repère, l'association des brasseries de sake de la préfecture : <a href="https://japansake.or.jp/sakagura/en/nara/" target="_blank">association brasseries sake Nara</a> <br>
+        Mais toutes les brasseries n'en font pas partie, comme la petite brasserie Kasugayama (春日山)  <a href="http://narakasugayama-shuzo.co.jp/" target="_blank">brasserie Kasugayama</a>. 
+        Celle ci est pourtant située dans la ville même de Nara à 300m de la brasserie qui fabrique la célèbre marque Harushika (春鹿) : <a href="https://www.harushika.com/" target="_blank">brasserie Imanishi seibee </a> 
     </p>
 
 
