@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <meta lang="fr">
 
     <!--Pour pouvoir faire des media queries i.e. ajuster la taille de l'affichage à celle des différents écrans: -->
@@ -13,9 +12,9 @@
     <!-- meta est une balise orpheline, elle permet d'insérer un élément à un endroit précis-->
 
     <!--Liaison avec mon fichier CSS sake-style-->
-    <link rel="stylesheet" href="../CSS/sake_style.css" />
+    <link rel="stylesheet" href="<?= $_SERVER['BASE_URI'] ?>/public/css/sake_style.css" />
     <!--Liaison avec mon fichier CSS slider-->
-    <link rel="stylesheet" href="../CSS/slider.css" />
+    <link rel="stylesheet" href="<?= $_SERVER['BASE_URI'] ?>/public/css/slider.css" />
 
 
     <!--Font utilisée dans le site-->
@@ -27,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=IBM+Plex+Sans+JP:wght@300&family=Piazzolla:wght@300&display=swap" rel="stylesheet">
 
     <title>Les sake du Japon</title>
+    <script src="<?= $_SERVER['BASE_URI']?>/public/js/slider.js"></script>
 </head>
 
 <body>

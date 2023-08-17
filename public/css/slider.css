@@ -36,7 +36,7 @@ Les flèches seront donc plaquées contre les bords grâce au positionnement abs
 La propriété transition qui va effectuer les changements d'opacité sur une durée de 300 millisecondes.
 Par conséquent, le survol du slider, fera apparaître les flèches en passante de l'opacity: 0 à 1 en 0.3 secondes. */
 
-#precedent, #suivant {
+#previous, #next {
     cursor: pointer;
     transition: opacity 0.3s ease;
     opacity: 0;
@@ -49,18 +49,22 @@ Par conséquent, le survol du slider, fera apparaître les flèches en passante 
 }
 
 /* positionne le chevron à gauche de l'image*/
-#precedent {
+#previous {
     left: 0;
 }
 
 /* positionne le chevron à droite de l'image*/
-#suivant {
+#next {
     right: 0;
 }
 
-#slider:hover #precedent,
-#slider:hover #suivant {
+#slider:hover #previous,
+#slider:hover #next {
     opacity: 1;
+}
+
+#slide {
+    object-fit : cover;
 }
 
 

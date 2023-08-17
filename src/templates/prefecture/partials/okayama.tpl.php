@@ -3,12 +3,11 @@
 
     <h2>Prefecture de Okayama</h2>
 
-    <div id="slider" >
-        <img src="../images/images_okayama/great-seto-ohashi.jpg" alt="Le grand pont Seto ohashi"  id="slide" width="60%" height="500">
-        <div id="precedent" onclick="ChangeSlide(-1)">&lt;</div>
-        <div id="suivant" onclick="ChangeSlide(1)">&gt;</div>
-    </div>
-
+    <?php
+    $firstImage = "great-seto-ohashi.jpg";
+    include __DIR__.'/slider.tpl.php';
+    ?>
+    
     <p>
         En premier lieu le célèbre pont se Seto (瀬戸大橋) qui relie Honshu à Shikoku<br>
         Avec Mari nous y sommes passés le lendemain de l'inauguration (10 avril 1988) sans accueil ni flonflon d'aucune sorte.

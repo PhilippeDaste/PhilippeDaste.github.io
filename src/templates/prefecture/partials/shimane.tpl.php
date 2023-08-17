@@ -1,13 +1,11 @@
-<body>
 
 
 <h2>Prefecture de Shimane</h2>
 
-<div id="slider" >
-    <img src="../images/images_shimane/sanctuaire_Izumo.jpg" alt="Le sanctuaire de Izumo"  id="slide" width="70%" height="500">
-    <div id="precedent" onclick="ChangeSlide(-1)">&lt;</div>
-    <div id="suivant" onclick="ChangeSlide(1)">&gt;</div>
-</div>
+<?php 
+$firstImage = 'sanctuaire_Izumo.jpg';
+include __DIR__.'/slider.tpl.php';
+?>
 
 <p>Pourquoi ce département ?<br></p>
 <p>J' y suis passé en 1987 et n'avais à ce momment là aucun intérêt pour le sake.
@@ -48,6 +46,3 @@
 
 
 </p>
-
-
-</body>

@@ -4,6 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Symfony\Component\Dotenv\Dotenv;
 use App\Controller\MainController;
+use App\Controller\PrefectureController;
 
 // on met en place le système de gestion des variables d'environnement (fichier .env)
 try {
@@ -43,8 +44,7 @@ $routes = [
         'method' => 'GET',
         'route' => '/prefectures/[a:name]',
         'target' => [
-            // TODO : changer le nom du controller en se basant sur l'exemple de MAIN (attention à bien importer la classe avec use)
-            'controller' => '',
+            'controller' => PrefectureController::class,
             'action' => 'show'
         ],
         'prefecture_show'
