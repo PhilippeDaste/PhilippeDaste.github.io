@@ -12,9 +12,9 @@
     <!-- meta est une balise orpheline, elle permet d'insérer un élément à un endroit précis-->
 
     <!--Liaison avec mon fichier CSS sake-style-->
-    <link rel="stylesheet" href="<?= $_SERVER['BASE_URI'] ?>/public/css/sake_style.css" />
+    <link rel="stylesheet" href="<?= $assetsBaseUri ?>/css/sake_style.css" />
     <!--Liaison avec mon fichier CSS slider-->
-    <link rel="stylesheet" href="<?= $_SERVER['BASE_URI'] ?>/public/css/slider.css" />
+    <link rel="stylesheet" href="<?= $assetsBaseUri ?>/css/slider.css" />
 
 
     <!--Font utilisée dans le site-->
@@ -23,15 +23,16 @@
     <!--Ici je récupère la police Dosis de Google font. Mais j'ai déjà une font bunny. Conflit ??-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=IBM+Plex+Sans+JP:wght@300&family=Piazzolla:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=IBM+Plex+Sans+JP:wght@300&family=Piazzolla:wght@300&display=swap"
+        rel="stylesheet">
 
     <title>Les sake du Japon</title>
-    <script src="<?= $_SERVER['BASE_URI']?>/public/js/slider.js"></script>
+    <script src="<?= $assetsBaseUri ?>/js/slider.js"></script>
 </head>
 
 <body>
     <!-- première version, même header pour toutes les pages : -->
     <header>
         <h1>Les sake du Japon 日本酒</h1>
-        <!-- <img src="../images_sake/istockphoto.jpg" alt="riz tasse お猪口 et sake" title="riz, 合, tasse お猪口 et sake"> -->
     </header>

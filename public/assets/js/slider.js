@@ -45,8 +45,8 @@ function changeSlide(direction) {
   // on récupère le nom de la préfecture (depuis l'attribut html data-prefecture)
   const currentPrefecture = imgElement.dataset.prefecture;
 
-  // on récupère l'uri de base du serveur depuis l'attribut html data-base-uri
-  const baseUri = imgElement.dataset.baseUri;
+  // on récupère l'uri de base du serveur sur l'objet window
+  const baseUri = window.location.origin;
 
   // on récupère le tableau des images correspondant à la préfecture récupérée
   const currentImages = prefectureImages[currentPrefecture];
@@ -68,5 +68,5 @@ function changeSlide(direction) {
   const imageToShow = currentImages[counter];
 
   // on met à jour l'attribut src de l'élément img du slider avec la nouvelle image
-  document.getElementById("slide").src = `${baseUri}/public/images/${currentPrefecture}/${imageToShow}`;
+  document.getElementById("slide").src = `${baseUri}/assets/images/${currentPrefecture}/${imageToShow}`;
 }

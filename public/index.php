@@ -16,14 +16,13 @@ try {
 
 $router = new AltoRouter();
 
-if (!isset($_SERVER['BASE_URI'])) {
-    $_SERVER['BASE_URI'] = '/';
+// si on est sur le serveur local apache, on a une variable d'environnement qui s'appelle BASE_URI
+if (isset($_SERVER['BASE_URI'])) {
+    // ce sera la racine de toutes les routes pour le router
+    $router->setBasePath($_SERVER['BASE_URI']);
 } else {
-    $_SERVER['BASE_URI'] = $_SERVER['HTTP_HOST'];
+    $_SERVER['BASE_URI'] = '/';
 }
-
-// on donne la racine de toutes les routes au router
-$router->setBasePath($_SERVER['BASE_URI']);
 
 $routes = [
     // MAIN
@@ -102,8 +101,6 @@ $routes = [
 
 // on donne les routes au router
 $router->addRoutes($routes);
-
-dump($router);
 
 
 // on dispatch ça vers le controller et la bonne méthode de ce controller
