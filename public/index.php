@@ -101,6 +101,8 @@ $routes = [
 // on donne les routes au router
 $router->addRoutes($routes);
 
+dump($router);
+
 
 // on dispatch ça vers le controller et la bonne méthode de ce controller
 try {
