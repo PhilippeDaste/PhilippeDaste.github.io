@@ -14,11 +14,14 @@ try {
     dd($e);
 }
 
-if (!$_SERVER['BASE_URI']) {
+$router = new AltoRouter();
+
+if (!isset($_SERVER['BASE_URI'])) {
     $_SERVER['BASE_URI'] = '/';
 }
 
-$router = new AltoRouter();
+// on donne la racine de toutes les routes au router
+$router->setBasePath($_SERVER['BASE_URI']);
 
 $routes = [
     // MAIN
@@ -29,7 +32,7 @@ $routes = [
             'controller' => MainController::class,
             'action' => 'home'
         ],
-        'main_home'
+        'name' => 'main_home'
     ],
     // PREFECTURES
     [
@@ -40,7 +43,7 @@ $routes = [
             'controller' => 'PrefectureController',
             'action' => 'index'
         ],
-        'prefecture_index'
+        'name' => 'prefecture_index'
     ],
     [
         'method' => 'GET',
@@ -49,7 +52,7 @@ $routes = [
             'controller' => PrefectureController::class,
             'action' => 'show'
         ],
-        'prefecture_show'
+        'name' => 'prefecture_show'
     ],
     // BRASSERIES
     [
@@ -59,7 +62,7 @@ $routes = [
             'controller' => 'BreweryController',
             'action' => 'index'
         ],
-        'brewery_index'
+        'name' => 'brewery_index'
     ],
     // ARTICLES
     [
@@ -70,7 +73,7 @@ $routes = [
             'controller' => 'ArticleController',
             'action' => 'index'
         ],
-        'article_index'
+        'name' => 'article_index'
     ],
     [
         'method' => 'GET',
@@ -80,7 +83,7 @@ $routes = [
             'controller' => '',
             'action' => 'show'
         ],
-        'article_show'
+        'name' => 'article_show'
     ],
     // MARQUES
     [
@@ -91,11 +94,9 @@ $routes = [
             'controller' => 'BrandController',
             'action' => 'index'
         ],
-        'brand_index'
+        'name' => 'brand_index'
     ],
 ];
-// d'abord on donne la racine de toutes les routes au router
-$router->setBasePath($_SERVER['BASE_URI']);
 
 // on donne les routes au router
 $router->addRoutes($routes);
