@@ -41,7 +41,7 @@ $routes = [
         'route' => '/prefectures',
         'target' => [
             // TODO : changer le nom du controller en se basant sur l'exemple de MAIN (attention à bien importer la classe avec use)
-            'controller' => 'PrefectureController',
+            'controller' => PrefectureController::class,
             'action' => 'index'
         ],
         'name' => 'prefecture_index'

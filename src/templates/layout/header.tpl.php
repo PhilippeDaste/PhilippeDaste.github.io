@@ -36,3 +36,4 @@
     <header>
         <h1>Les sake du Japon 日本酒</h1>
     </header>
+    <?php include __DIR__ . '/nav.tpl.php' ?>
