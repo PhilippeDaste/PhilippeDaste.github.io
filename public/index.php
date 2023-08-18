@@ -18,6 +18,8 @@ $router = new AltoRouter();
 
 if (!isset($_SERVER['BASE_URI'])) {
     $_SERVER['BASE_URI'] = '/';
+} else {
+    $_SERVER['BASE_URI'] = $_SERVER['HTTP_HOST'];
 }
 
 // on donne la racine de toutes les routes au router
