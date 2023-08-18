@@ -14,7 +14,9 @@ try {
     dd($e);
 }
 
-
+if (!$_SERVER['BASE_URI']) {
+    $_SERVER['BASE_URI'] = '/';
+}
 
 $router = new AltoRouter();
 
