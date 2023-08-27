@@ -27,13 +27,13 @@
         href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=IBM+Plex+Sans+JP:wght@300&family=Piazzolla:wght@300&display=swap"
         rel="stylesheet">
 
-    <title>Les sake du Japon</title>
+    <title><?= !empty($pageTitle) ? $pageTitle : 'Les sake du Japon 日本酒' ?></title>
     <script src="<?= $assetsBaseUri ?>/js/slider.js"></script>
 </head>
 
 <body>
     <!-- première version, même header pour toutes les pages : -->
     <header>
-        <h1>Les sake du Japon 日本酒</h1>
+        <h1><?= !empty($pageTitle) ? $pageTitle : 'Les sake du Japon 日本酒' ?></h1>
     </header>
     <?php include __DIR__ . '/nav.tpl.php' ?>

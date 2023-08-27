@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use App\Controller\ArticleController;
 use Symfony\Component\Dotenv\Dotenv;
 use App\Controller\MainController;
 use App\Controller\PrefectureController;
@@ -70,18 +71,16 @@ $routes = [
         'method' => 'GET',
         'route' => '/articles',
         'target' => [
-            // TODO : changer le nom du controller en se basant sur l'exemple de MAIN (attention à bien importer la classe avec use)
-            'controller' => 'ArticleController',
+            'controller' => ArticleController::class,
             'action' => 'index'
         ],
         'name' => 'article_index'
     ],
     [
         'method' => 'GET',
-        'route' => '/articles/[i:id]',
+        'route' => '/articles/[**:slug]',
         'target' => [
-            // TODO : changer le nom du controller en se basant sur l'exemple de MAIN (attention à bien importer la classe avec use)
-            'controller' => '',
+            'controller' => ArticleController::class,
             'action' => 'show'
         ],
         'name' => 'article_show'

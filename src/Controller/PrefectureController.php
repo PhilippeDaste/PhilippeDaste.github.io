@@ -4,15 +4,19 @@ namespace App\Controller;
 
 class PrefectureController extends CoreController
 {
+    
     public function index()
     {
-        $this->render('prefecture/index');
+        $this->render('prefecture/index', [
+            'pageTitle' => "Les préfectures"
+        ]);
     }
 
     public function show($name)
     {
         $this->render('prefecture/show', [
-            'prefectureName' => $name
+            'prefectureName' => $name,
+            'pageTitle' => $name
         ]);
     }
 }

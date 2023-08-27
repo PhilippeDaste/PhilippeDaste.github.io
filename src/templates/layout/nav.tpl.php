@@ -6,7 +6,7 @@
     <a href="#" class="conteneur_link_color">
         Brasseries
     </a>
-    <a href="page_experiences.php" class="conteneur_link_color">
+    <a href="<?= $router->generate('article_index') ?>" class="conteneur_link_color">
         Expériences
     </a>
     <a href="page_marques.php" class="conteneur_link_color">
