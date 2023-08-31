@@ -2,6 +2,8 @@
 
 namespace App\Model;
 
+use App\Core\Database;
+
 class Prefecture extends CoreModel
 {
     private $name;
@@ -15,5 +17,13 @@ class Prefecture extends CoreModel
     {
         $this->name = $name;
         return $this;
+    }
+
+    public function find(int $id) {
+        $sql = "SELECT * FROM prefectures WHERE id = :id";
+        $stmt = Database::getPdo()->prepare($sql);
+        $stmt->execute(['id' => $id]);
+        $stmt->setFetchMode(\PDO::FETCH_CLASS, Prefecture::class);
+        return $stmt->fetch();
     }
 }

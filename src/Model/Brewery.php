@@ -2,6 +2,8 @@
 
 namespace App\Model;
 
+use App\Core\Database;
+
 class Brewery extends CoreModel
 {
     private $name;
@@ -87,5 +89,13 @@ class Brewery extends CoreModel
     {
         $this->prefecture_id = $prefecture_id;
         return $this;
+    }
+
+    public function find(int $id) {
+        $sql = "SELECT * FROM breweries WHERE id = :id";
+        $pdoSt = Database::getPDO()->prepare($sql);
+        $pdoSt->execute(['id' => $id]);
+        $result = $pdoSt->fetchObject(Brewery::class);
+        return $result;
     }
 }

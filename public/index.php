@@ -3,6 +3,8 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use App\Controller\ArticleController;
+use App\Controller\BrandController;
+use App\Controller\BreweryController;
 use Symfony\Component\Dotenv\Dotenv;
 use App\Controller\MainController;
 use App\Controller\PrefectureController;
@@ -61,7 +63,7 @@ $routes = [
         'method' => 'GET',
         'route' => '/brasseries',
         'target' => [
-            'controller' => 'BreweryController',
+            'controller' => BreweryController::class,
             'action' => 'index'
         ],
         'name' => 'brewery_index'
@@ -91,7 +93,7 @@ $routes = [
         'route' => '/marques',
         'target' => [
             // TODO : changer le nom du controller en se basant sur l'exemple de MAIN (attention à bien importer la classe avec use)
-            'controller' => 'BrandController',
+            'controller' => BrandController::class,
             'action' => 'index'
         ],
         'name' => 'brand_index'
