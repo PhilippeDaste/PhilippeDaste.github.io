@@ -115,3 +115,4 @@ CREATE TABLE `prefecture_images` (
   KEY `prefecture_id` (`prefecture_id`),
   CONSTRAINT `prefecture_images_ibfk_1` FOREIGN KEY (`prefecture_id`) REFERENCES `prefecture` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+

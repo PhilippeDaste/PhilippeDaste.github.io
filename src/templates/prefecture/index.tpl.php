@@ -11,11 +11,13 @@
     <div>
         <label for="prefecture">Sélectionnez une préfecture : </label>
         <select class="select" name="prefecture" id="prefecture" onchange="location = this.value;">
-            <option value="#">Hyogo 兵庫 </option>
+
             <option value="<?= $router->generate('prefecture_show', ['name' => 'nara']) ?>">Nara 奈良 </option>
             <option value="<?= $router->generate('prefecture_show', ['name' => 'okayama']) ?>">Okayama 岡山 </option>
             <option value="<?= $router->generate('prefecture_show', ['name' => 'shimane']) ?>">Shimane 島根 </option>
-            <option value="#">Tochigi 栃木 </option>
+            <option value="<?= $router->generate('prefecture_show', ['name' => 'tochigi']) ?>">Tochigi 栃木 </option>
+            <option value="<?= $router->generate('prefecture_show', ['name' => 'niigata']) ?>">Niigata 新潟 </option>
+            <option value="#">Hyogo 兵庫 </option>
             <option value="#">Yamagata 山形 </option>
         </select>
     </div>
