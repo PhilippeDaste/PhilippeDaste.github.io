@@ -17,4 +17,5 @@ Un parallèle avec la fleur qui veut que lorsqu'elle fleurit les feuilles tomben
 
 </p>
 <img  class="three" class="position_image" src="<?= $assetsBaseUri ?>/images/sake/Mimurosugi.png" alt="Mimurosugi"  style="width:250px;height:550px;">
+
 <a class ="four" class="position_lien" href="https://imanishisyuzou.com/" target="_blank">La maison Imanishi 今西 (Nara/Sakurai/Miwa)</a>  

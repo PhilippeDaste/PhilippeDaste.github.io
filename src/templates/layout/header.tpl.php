@@ -28,7 +28,7 @@
         rel="stylesheet">
 
     <title><?= !empty($pageTitle) ? $pageTitle : 'Les sake du Japon 日本酒' ?></title>
-    <script src="<?= $assetsBaseUri ?>/js/slider.js"></script>
+    <script src="<?= $assetsBaseUri ?>../public/assets/js/slider.js"></script>
 </head>
 
 <body>

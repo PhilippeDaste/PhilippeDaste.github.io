@@ -1,7 +1,7 @@
-<body>
 
 
-    <h2>Prefecture de Okayama</h2>
+
+<h2>Prefecture de Okayama 岡山</h2>
 
     <?php
     $firstImage = "great-seto-ohashi.jpg";
@@ -61,4 +61,4 @@
         <a href="http://www.sakuramuromachi.co.jp/" target="_blank">Brasserie Kamikokoro</a><br>
     </p>
 
-</body>
+

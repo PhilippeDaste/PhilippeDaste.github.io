@@ -1,10 +1,12 @@
 
-<h2>Préfecture de Nara</h2>
+
+<h2>Préfecture de Nara 奈良</h2>
 
     <?php
     $firstImage = "Todaiji1.jpg";
     include __DIR__.'/slider.tpl.php';
     ?>
+
     <p>
         Nous sommes ici au coeur du Japon ancien. Un des départements les plus riches du Japon en terme de trésors culturels et naturels.
         La préfecture de Nara à la particularité d'avoir trois sites classés au Patrimoine mondial de l'UNESCO.
