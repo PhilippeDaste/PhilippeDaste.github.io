@@ -23,7 +23,7 @@
         Ce n'est pas négligeable mais ne fait pas de Tochigi une région remarquable en la matière.</p>
 
     <p>
-        Du fait de nombreuses visites dans cette préfecture j'ai eu l'occasion que de tester plusieurs marques de sake :<br>
+        Du fait de très nombreuses visites dans cette préfecture j'ai eu l'occasion que de tester plusieurs marques de sake :<br>
         <ul>
             <ui>Brasserie  <a href="https://www.tentaka.co.jp/index2.php/" target="_blank">Tentaka (天鷹酒造)</a> 〒324-0411 栃木県大田原市蛭畑2166.<br>
                 Ces dernières années, la brasserie Tentaka s'est tournée vers l'organique (有機), c'est à dire du riz cultivé sans pesticides.
@@ -38,15 +38,25 @@
                 Plusieurs variétés poussent sur le domaine : Kame no oo (亀ノ尾), Yamada nishiki (山田錦), omacchi (雄町). 
                 La brasserie s'attache à la cohérence entre l'eau utilisée lors de la pousse et lors du brassage du riz.
                 Ces dernières années elle s'est particulièrement attachée au Kame no oo.
-                Personnellement j'apprécie leur junmai daiginjo muroka (無濾過) kirifuri (霧降) pour son légèr pétillant.
-                Il est fait avec du Yamada nishiki poli à 50%.<br>
+                Tous leurs sakés sont des kimotos (sans ajout d'acide lactide), genshu (sans dilution), muroka (sans collage).
+                Personnellement j'apprécie leur junmai daiginjo muroka (無濾過) kirifuri (霧降) pour son discret pétillant.
+                Il est fait avec du Yamada nishiki poli à 50%.
+                Une curiosité que je n'ai encore pas vue : leur Dolce Bouquet, un sake élaboré avec de la levure de vin.<br>
             
-            <ui>Brasserie <a href="https://www.kyokuko.net/" target="_blank">Watanabe (渡邉)</a> 324-0212 栃木県大田原市須佐木797-1. Marque Kyokuko (旭興).<br>
-            Implantée à côté de Otawara, j'avoue avoir essayé plusieurs fois leur sake ; sans arriver à en trouver une particularité marquante.<br>
+            <ui>Brasserie <a href="https://www.kyokuko.net/" target="_blank">Watanabe (渡邉)</a> 〒324-0212 栃木県大田原市須佐木797-1. Marque Kyokuko (旭興).<br>
+                Implantée à côté de Otawara, j'avoue avoir essayé plusieurs fois leur sake ; sans arriver à en trouver une particularité marquante.<br>
+
+            <ui>Aussi implantée à Otawara, la brasserie Shiraso.
+                <a href="https://www.shiraso.com/" target="_blank">Shiraso 白相</a> 〒324-0501 栃木県那須郡那珂川町小川715-2. Marque Tochiakane とちあかね (栃茜).<br>
+                Je n'ai pu goûter qu'un petit 300 ml de 特性本醸造, non répertorié sur leur site, qui utilise, si on se fie à l'image sur le bouchon, une levure de nadeshiko (撫子酵母) 
+                Il y a toutefois sur leur site d'autres produits originaux, comme leur Junmai ginjo Tochiakane "rouge" (純米 吟醸 栃茜).
+                Akane (茜) signifie Garance, une couleur bien connue des français.
+                Ce sake utilise un riz particulier au département Nasu hikari (なすひかり) et aussi une levure originale, cette fois-ci de fraise (いちご酵母).
+                La fraise est une grande spécialité de Tochigi.<br>
 
             <ui>Brasserie <a href="https://www.sakekaika.co.jp/" target="_blank">Brasserie Dai ichi (第一酒造)</a>〒327-0031 栃木県佐野市田島町４８８. Marque Kaika (開華).<br>
-            La plus ancienne brasserie de Tochigi. Comme fièrement indiqué sur le site : établie en 1673, plus de 100 ans avant la déclaration d'indépendance des Etats-Unis.
-            La brasserie n'est pas très loin (3.5km) du parc Ashigata.</ui>
+                La plus ancienne brasserie de Tochigi. Comme fièrement indiqué sur le site : établie en 1673, plus de 100 ans avant la déclaration d'indépendance des Etats-Unis.
+                La brasserie n'est pas très loin (3.5km) du parc Ashigata.</ui>
 
         </ul>
 

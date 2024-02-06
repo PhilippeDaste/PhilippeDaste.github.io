@@ -5,8 +5,8 @@ const prefectureImages = {
     "Tsuwano2.jpg",
     "chateau_Matsue.jpg",
     "Tsuwano3.jpg",
-    "jardin_musée_Adachi.jpg",
-    "jardin_musée_adachi3.jpg",
+    "jardin_museum_Adachi1.jpg",
+    "jardin_museum_adachi3.jpg",
     "Tsuwano4.jpg",
     "iwamikagura_dance_orochi.jpg",
   ],
@@ -77,6 +77,12 @@ const prefectureImages = {
     "iwakuni_kintai_bridge1.jpg",
     "iwakuni_kintai_bridge2.jpg",
   ],
+  hyogo: [
+
+  ],
+  tokyo: [
+    "marcassin.jpg",
+  ],
 };
 
 // on déclare un compteur qu'on initilaise à 0
@@ -116,5 +122,5 @@ function changeSlide(direction) {
   const imageToShow = currentImages[counter];
 
   // on met à jour l'attribut src de l'élément img du slider avec la nouvelle image ${baseUri}
-  document.getElementById("slide").src = `${baseUri}/images/${currentPrefecture}/${imageToShow}`;
+  document.getElementById("slide").src = `${baseUri}/assets/images/${currentPrefecture}/${imageToShow}`;
 }

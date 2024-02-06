@@ -4,7 +4,7 @@
     <!--width="1024" height="621"-->
     <h2>Carte des 48 préfectures du Japon</h2>
 
-    <img id="prefecture_map_position" src="../public/assets/images/Map-of-Prefectures-of-Japan.webp" width="500"
+    <img id="prefecture_map_position" src="<?= $assetsBaseUri ?>/images/Map-of-Prefectures-of-Japan.webp" width="500"
         height="400">
 
     <h2>Présentation des préfectures où j'ai testé du sake</h2>
@@ -19,7 +19,9 @@
             <option value="<?= $router->generate('prefecture_show', ['name' => 'niigata']) ?>">Niigata 新潟 </option>
             <option value="<?= $router->generate('prefecture_show', ['name' => 'shizuoka']) ?>">Shizuoka 静岡 </option>
             <option value="<?= $router->generate('prefecture_show', ['name' => 'yamaguchi']) ?>">Yamaguchi 山口 </option>
-            <option value="#">Hyogo 兵庫 </option>
+            <option value="<?= $router->generate('prefecture_show', ['name' => 'hyogo']) ?>">Hyogo 兵庫 </option>
+            <option value="<?= $router->generate('prefecture_show', ['name' => 'tokyo']) ?>">Tokyo  東京</option>
+            <option value="#">Hiroshima 広島 </option>
 
         </select>
     </div>
