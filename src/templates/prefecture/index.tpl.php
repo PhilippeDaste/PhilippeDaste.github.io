@@ -22,6 +22,7 @@
             <option value="<?= $router->generate('prefecture_show', ['name' => 'hyogo']) ?>">Hyogo 兵庫 </option>
             <option value="<?= $router->generate('prefecture_show', ['name' => 'tokyo']) ?>">Tokyo  東京</option>
             <option value="#">Hiroshima 広島 </option>
+            <option value="#">Yamagata 山形 </option>
 
         </select>
     </div>
